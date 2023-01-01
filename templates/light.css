@@ -1,0 +1,38 @@
+header {
+    background-color: accent-color-placeholder;
+}
+
+#scroller {
+    background-color: link-hover-color-placeholder;
+}
+
+body {
+    background-color: background-color-placeholder;
+    color: font-color-placeholder;
+}
+
+.paper-icon-dark {
+    display: None;
+}
+
+h1,
+h2,
+h3 {
+    color: header-color-placeholder;
+}
+
+a {
+    color: accent-color-placeholder;
+}
+
+a:hover {
+    color: link-hover-color-placeholder;
+}
+
+.hbar {
+    color: divider-color-placeholder;
+}
+
+h3 {
+    border-bottom: 1px divider-color-placeholder dashed;
+}

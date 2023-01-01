@@ -1,0 +1,23 @@
+{
+    "font-color": "black",
+    "background-color": "#ffffff",
+    "header-color": "#222",
+    "accent-color": "#3B7EA1",
+    "link-hover-color": "#00A598",
+    "divider-color": "#003362",
+    "paper-img": "images/paper.png",
+    "extra-img": "images/extra.png",
+    "slides-img": "images/slides.png",
+    "bibtex-img": "images/bibtex.png",
+
+    "font-color-dark": "#EEEEEE",
+    "background-color-dark": "black",
+    "header-color-dark": "#EEEEEE",
+    "link-hover-color-dark": "#3B7EA1",
+    "accent-color-dark": "#00A598",
+    "divider-color-dark": "#AAAAAA",
+    "paper-img-dark": "images/paper-dark.png",
+    "extra-img-dark": "images/extra-dark.png",
+    "slides-img-dark": "images/slides-dark.png",
+    "bibtex-img-dark": "images/bibtex-dark.png"
+}

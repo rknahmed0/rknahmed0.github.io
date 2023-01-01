@@ -1,0 +1,38 @@
+header {
+    background-color: #3B7EA1;
+}
+
+#scroller {
+    background-color: #00A598;
+}
+
+body {
+    background-color: #ffffff;
+    color: black;
+}
+
+.paper-icon-dark {
+    display: None;
+}
+
+h1,
+h2,
+h3 {
+    color: #222;
+}
+
+a {
+    color: #3B7EA1;
+}
+
+a:hover {
+    color: #00A598;
+}
+
+.hbar {
+    color: #003362;
+}
+
+h3 {
+    border-bottom: 1px #003362 dashed;
+}

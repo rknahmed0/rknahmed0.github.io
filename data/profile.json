@@ -1,0 +1,16 @@
+{
+    "headshot": "images/ahmed.jpg",
+    "blurb"   : "<p><abbr title=\"preferred name\"><b>Rakin</b></abbr> is an M.D.-Ph.D. candidate in a multi-institutional program between <a href=\"https://cabot.harvard.edu/people/syed-rakin-ahmed\">Harvard</a>, <a href=\"mailto:rakin@mit.edu\">MIT</a> and <a href=\"https://dartmed.dartmouth.edu/spring20/html/profiles_student_spotlight_ahmed/\">Dartmouth</a>, having been born and raised in Dhaka, Bangladesh. Rakin is currently a third-year Ph.D. student in Biophysics at <a href=\"https://hms.harvard.edu/\">Harvard Medical School</a>, where he is co-advised by Bruce Rosen [1] and Jayashree Kalpathy-Cramer [2] in the QTIM lab. Before moving to Cambridge, Rakin studied Biomedical Engineering, Applied Math and Economics during his undergrad as a member of the Class of 2018 at Dartmouth on a <a href=\"https://home.dartmouth.edu/news/2022/01/dartmouth-adopts-need-blind-international-admissions\">full-ride</a> <a href=\"https://learningenglish.voanews.com/a/dartmouth-to-admit-international-students-without-considering-ability-to-pay-/6405108.html\">scholarship</a> [3], <a href=\"https://youtu.be/3VV-LYKeQTQ?t=1387\">graduating</a> with High Honors, Phi Beta Kappa, Tau Beta Pi and Magna Cum Laude, and took part in an exchange at the <a href=\"https://www.ox.ac.uk/\">University of Oxford</a> in the UK.</p><p>Rakin's clinical and research interests lie at the intersection of AI/deep learning and oncology (radiation-, GU-, neuro- and immuno-oncology), biomedical imaging, cancer genomics and genome editing. Rakin is broadly interested in addressing issues pertaining to AI deployment and model robustness (e.g., repeatability, generalizability), with a long-term goal of integrating deep learning (DL) into oncology workflows to augment the clinician, thereby potentially replacing costly, risky, and invasive tests. Rakin has explored these interests extensively via work and publications generated at the <a href=\"https://www.broadinstitute.org/\">Broad Institute of MIT and Harvard</a> (where he worked with David Liu [4]), <a href=\"mailto:srahmed@mgh.harvard.edu\">Massachusetts General Hospital</a>, <a href=\"https://www.martinos.org/\">HST Martinos Center</a> and <a href=\"https://www.mskcc.org/\">Memorial Sloan Kettering Cancer Center</a>, among other institutions.</p>",
+    "cv"      : "https://drive.google.com/drive/folders/1w9nu-759kg7Z36_Tt8MhS7Q-BvcbK8E4?usp=sharing",
+    "linkedin": "https://www.linkedin.com/in/syed-rakin-ahmed/",
+    "dmprof"  : "https://dartmed.dartmouth.edu/spring20/html/profiles_student_spotlight_ahmed/",
+    "cabot"   : "https://cabot.harvard.edu/people/syed-rakin-ahmed",
+    "uhsprof" : "https://geiselmed.dartmouth.edu/dice/meet-the-uhs-scholars/#2022",
+    "orcid"   : "https://orcid.org/0000-0002-1615-8633",
+    "scholar" : "https://scholar.google.com/citations?user=TFJXuZ4AAAAJ&hl=en&oi=ao",
+    "github"  : "https://github.com/rknahmed0/",
+    "harvard" : "mailto:syedrakin_ahmed@fas.harvard.edu",
+    "mit"     : "mailto:rakin@mit.edu",
+    "mgh"     : "mailto:srahmed@mgh.harvard.edu",
+    "dartm"   : "mailto:syed.rakin.ahmed.med@dartmouth.edu"
+}

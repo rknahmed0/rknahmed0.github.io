@@ -1,0 +1,39 @@
+header {
+    background-color: #00A598;
+}
+
+#scroller {
+    background-color: #3B7EA1;
+}
+
+body {
+    background-color: black;
+    color: #EEEEEE;
+}
+
+h1,
+h2,
+h3 {
+    color: #EEEEEE;
+}
+
+a {
+    color: #00A598;
+}
+
+a:hover {
+    color: #3B7EA1;
+}
+
+.hbar {
+    color: #AAAAAA;
+    border-bottom-width: 1px;
+}
+
+h3 {
+    border-bottom: 1px #AAAAAA dashed;
+}
+
+.paper-icon {
+    display: None;
+}
