@@ -661,7 +661,7 @@ if __name__ == "__main__":
     footer_html = read_template(f"{config.templates}/footer.html", optional=False)
 
     if is_rakins(meta_json["name"]):
-        footer_html = """\n<footer>\n<p>Copyright &copy; 2022 Syed Rakin Ahmed</p>\n</footer>\n"""
+        footer_html = """\n<footer>\n<p>Copyright &copy; 2023 Syed Rakin Ahmed</p>\n</footer>\n"""
     else:
         footer_html = "\n" + footer_html
 
