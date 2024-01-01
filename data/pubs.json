@@ -262,18 +262,7 @@
         "bibtex"    : "",
         "section"   : "Papers",
         "selected"  : false
-    },
-    {
-        "title"     : "Deep learning-based prediction of breast cancer tumor and immune phenotypes from digitized histopathology.",
-        "authors"   : "Goncalves T, Kim A, ..., <b>Ahmed SR</b>, et al.",
-        "journal"   : "submitted, in-review (2023).",
-        "link"      : "",
-        "extra"     : "",
-        "slides"    : "",
-        "bibtex"    : "",
-        "section"   : "Papers",
-        "selected"  : false
-    },  
+    }, 
     {
         "title"     : "AdrenoBERT: automated multiclass categorization of adrenal abnormalities from free-text radiology reports using transformer language models.",
         "authors"   : "Raghavan S, Singh P, ..., <b>Ahmed SR</b> et al.",
@@ -429,9 +418,20 @@
         "selected"  : true
     },
     {
+        "title"     : "Deep learning-based prediction of breast cancer tumor and immune phenotypes from digitized histopathology.",
+        "authors"   : "Goncalves T, Kim A, ..., <b>Ahmed SR</b>, et al.",
+        "journal"   : "The 38th Annual AAAI Conference on Artificial Intelligence (2024).",
+        "link"      : "",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Presentations and Symposia",
+        "selected"  : false
+    },
+    {
         "title"     : "A deep learning algorithm for fully automated volumetric measurement of meningioma burden.",
         "authors"   : "Cleveland M, Kim A, ..., <b>Ahmed SR</b>, et al.",
-        "journal"   : "Accepted for presentation at Society for NeuroOncology 28th Annual Meeting",
+        "journal"   : "Society for NeuroOncology 28th Annual Meeting (2023).",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
