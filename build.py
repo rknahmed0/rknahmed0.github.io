@@ -381,9 +381,15 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<a href="%s">Github</a>\n' % profile["github"]
     
     profile_html += '<p>\n'
-    profile_html += '<a href="%s">Dartmouth Medicine Profile</a> | ' % profile["dmprof"]
-    profile_html += '<a href="%s">Harvard Profile</a> | ' % profile["cabot"]
-    profile_html += '<a href="%s">UHS Profile</a>' % profile["uhsprof"]
+    profile_html += '<a href="%s">Harvard Profile</a> | ' % profile["hvprof"]
+    profile_html += '<a href="%s">Dartmouth Medicine Profile</a>\n' % profile["dmprof"]
+    profile_html += '</p>\n'
+
+    profile_html += '</p>\n'
+    profile_html += '<a href="%s">UHS</a> | ' % profile["uhsprof"]
+    profile_html += '<a href="%s">Resident Tutor</a> | ' % profile["cabot"]
+    profile_html += '<a href="%s">FiVE</a> | ' % profile["five"]
+    profile_html += '<a href="%s">IV Fellow</a>\n' % profile["ivfell"]
     profile_html += '</p>\n'
     
     profile_html += '<p>\n'
@@ -446,7 +452,7 @@ def build_index(
     body_html += header(has_dark)
     body_html += '<div class="content">\n'
     body_html += build_profile(profile_json)
-    body_html += build_news(news_json, 5, False)
+    body_html += build_news(news_json, 7, False) # 5/5/2024 changed from 5 to 7 news items
     body_html += build_pubs(pubs_json, False)
     body_html += "</div>\n"
     body_html += footer_html

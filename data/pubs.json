@@ -35,8 +35,19 @@
     {
         "title"     : "Assessing generalizability of an AI-based visual test for cervical cancer screening.",
         "authors"   : "<b>Ahmed SR</b>, Egemen D, Befano B, et al.",
-        "journal"   : "medRxiv, 2023.09. 26.23295263. submitted, in-review (2023)",
+        "journal"   : "medRxiv, 2023.09. 26.23295263. submitted, under review at PLOS Digital Health (2024).",
         "link"      : "https://doi.org/10.1101/2023.09.26.23295263",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Papers",
+        "selected"  : true
+    },
+    {
+        "title"     : "Generalizable deep neural networks for image quality classification of cervical images.",
+        "authors"   : "<b>Ahmed SR</b>, Befano B, Egemen D, et al.",
+        "journal"   : "Res. Sq. 2024. submitted, under review at Nature Digital Medicine (2024).",
+        "link"      : "https://doi.org/10.21203/rs.3.rs-3845696/v1",
         "extra"     : "",
         "slides"    : "",
         "bibtex"    : "",
@@ -68,8 +79,8 @@
     {
         "title"     : "Patient-specific, mechanistic models of tumor growth incorporating artificial intelligence and big data.",
         "authors"   : "Lorenzo G, <b>Ahmed SR</b>, Hormuth D, et al.",
-        "journal"   : "arXiv preprint arXiv:2308.14925. accepted in Volume 26 of ARBME (2023).",
-        "link"      : "https://doi.org/10.48550/arXiv.2308.14925",
+        "journal"   : "Annu Rev Biomed Eng. 2024 Apr 9.",
+        "link"      : "https://doi.org/10.1146/annurev-bioeng-081623-025834",
         "extra"     : "",
         "slides"    : "",
         "bibtex"    : "",
@@ -185,17 +196,6 @@
         "bibtex"    : "",
         "section"   : "Papers",
         "selected"  : true
-    },
-    {
-        "title"     : "Generalizable deep neural networks for image quality classification of cervical images.",
-        "authors"   : "<b>Ahmed SR</b>, Kalpathy-Cramer J, et al.",
-        "journal"   : "submitted, in-review (2023).",
-        "link"      : "",
-        "extra"     : "",
-        "slides"    : "",
-        "bibtex"    : "",
-        "section"   : "Papers",
-        "selected"  : false
     },
     {
         "title"     : "Improving the repeatability of deep learning models using novel loss function combination and optimization approaches.",
@@ -407,6 +407,28 @@
         "selected"  : true
     },
     {
+        "title"     : "Deep learning-based non-invasive molecular profiling of brain metastases from MR imaging.",
+        "authors"   : "Bhat S, Goncalves T, <b>Ahmed SR</b>, et al.",
+        "journal"   : "The 21st International Symposium on Biomedical Imaging (ISBI) 2024, Athens, Greece",
+        "link"      : "",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Presentations and Symposia",
+        "selected"  : true
+    },
+    {
+        "title"     : "Implications for squamocolumnar junction visibility on the performance of Automated Visual Evaluation algorithm for cervical cancer screening",
+        "authors"   : "Desai K, Befano B, <b>Ahmed SR</b>, et al.",
+        "journal"   : "International Papillomavirus Conference (IPVC) 2024",
+        "link"      : "",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Presentations and Symposia",
+        "selected"  : false
+    },
+    {
         "title"     : "Deep learning-based cervical cancer visual evaluation test: designing the test result as 2-class or 3-class.",
         "authors"   : "Egemen D, Befano B, Rodriguez AC, <b>Ahmed SR</b>, et al.",
         "journal"   : "International Papillomavirus Conference (IPVC) 2023",
@@ -418,9 +440,9 @@
         "selected"  : true
     },
     {
-        "title"     : "Deep learning-based prediction of breast cancer tumor and immune phenotypes from digitized histopathology.",
-        "authors"   : "Goncalves T, Kim A, ..., <b>Ahmed SR</b>, et al.",
-        "journal"   : "The 38th Annual AAAI Conference on Artificial Intelligence (2024).",
+        "title"     : "Conformal prediction and Monte Carlo inference for addressing uncertainty in cervical cancer screening.",
+        "authors"   : "Clark C, Kinder S, Egemen D, Befano B, Desai K, <b>Ahmed SR</b>, et al.",
+        "journal"   : "27th MICCAI 2024 conference, Marrakesh, Morocco.",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
@@ -429,10 +451,21 @@
         "selected"  : false
     },
     {
+        "title"     : "Deep learning-based prediction of breast cancer tumor and immune phenotypes from digitized histopathology.",
+        "authors"   : "Goncalves T, Kim A, ..., <b>Ahmed SR</b>, et al.",
+        "journal"   : "The 38th Annual AAAI Conference on Artificial Intelligence (2024).",
+        "link"      : "https://doi.org/10.48550/arXiv.2404.16397",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Presentations and Symposia",
+        "selected"  : true
+    },
+    {
         "title"     : "A deep learning algorithm for fully automated volumetric measurement of meningioma burden.",
         "authors"   : "Cleveland M, Kim A, ..., <b>Ahmed SR</b>, et al.",
-        "journal"   : "Society for NeuroOncology 28th Annual Meeting (2023).",
-        "link"      : "",
+        "journal"   : "Society for NeuroOncology 28th Annual Meeting (2023) and MIT/MGB AI Cures Conference 2024.",
+        "link"      : "https://doi.org/10.1093/neuonc/noad179.0771",
         "extra"     : "",
         "slides"    : "",
         "bibtex"    : "",
