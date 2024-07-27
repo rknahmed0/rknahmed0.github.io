@@ -406,6 +406,26 @@ def build_profile(profile: Dict[str, str]):
         '<img class="headshot" src="%s" alt="Headshot"/>\n' % profile["headshot"]
     )
     profile_html += profile["blurb"]
+
+    # SRA added 06-25-2024
+    profile_html += '<p>\n'
+    profile_html += '<div class="videos">\n'
+    profile_html += '<div class="video-row">\n'
+    profile_html += '<div class="video">HarvardSpeech</div>\n'
+    profile_html += '<div class="video">HMSHooding</div>\n'
+    profile_html += '</div>\n'  # close video-row
+
+    profile_html += '<div class="video-row">\n'
+    profile_html += '<div class="video">GSASDiploma</div>\n'
+    profile_html += '<div class="video">UniWideComm</div>\n'
+    profile_html += '</div>\n'  # close video-row
+
+    profile_html += '<div class="video-row center">\n'
+    profile_html += '<div class="video">DartmouthFinAid</div>\n'
+    profile_html += '</div>\n'  # close video-row center
+    profile_html += '</div>\n'  # close videos
+    profile_html += '</p>\n'
+
     profile_html += "</div>\n"  # close profile
 
     return profile_html
@@ -451,7 +471,24 @@ def build_index(
     body_html  = "<body>\n"
     body_html += header(has_dark)
     body_html += '<div class="content">\n'
-    body_html += build_profile(profile_json)
+
+    # SRA added 06-25-2024
+    profile_html = build_profile(profile_json)
+
+    harvard_speech = '<iframe width="385" height="217" src="https://drive.google.com/file/d/1gUfnXREFha1onxQCOCd728FaRAqFklJY/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    hms_hooding = '<iframe width="385" height="217" src="https://drive.google.com/file/d/10HesprAQXGE-RgoiKGv3XppBXMJvxxn-/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    gsas_diploma = '<iframe width="385" height="217" src="https://drive.google.com/file/d/1qTySGLPS4J4h2cvjOJy-jbPa8D6xB6_Y/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    uniwide_comm = '<iframe width="385" height="217" src="https://drive.google.com/file/d/1QBbY3yzuSKG9M6TwtodA5uXLCD2Vnruv/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    dartmouth_finaid = '<iframe width="385" height="217" src="https://www.youtube.com/embed/VLV_LlrPOuI?start=290&end=515" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+    profile_html = profile_html.replace("HarvardSpeech", harvard_speech)
+    profile_html = profile_html.replace("HMSHooding", hms_hooding)
+    profile_html = profile_html.replace("GSASDiploma", gsas_diploma)
+    profile_html = profile_html.replace("UniWideComm", uniwide_comm)
+    profile_html = profile_html.replace("DartmouthFinAid", dartmouth_finaid)
+
+    body_html += profile_html
+
     body_html += build_news(news_json, 7, False) # 5/5/2024 changed from 5 to 7 news items
     body_html += build_pubs(pubs_json, False)
     body_html += "</div>\n"
