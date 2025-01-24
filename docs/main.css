@@ -118,7 +118,7 @@ b {
 /* SRA added 06-25-2024 */
 /* Start Videos */
 
-/*.video {
+/* .video {
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -134,8 +134,8 @@ b {
 
 .video .full-width {
     grid-column: span 2;
-}
-*/
+} */
+
 /* End Videos */
 
 /* SRA added 06-25-2024 */
@@ -164,6 +164,34 @@ b {
 
 /* End Videos */
 
+/* SRA added 01-31-2025 */
+/* Start Videos */
+/* .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.video {
+    flex: 1 1 45%; 
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .video {
+        flex: 1 1 100%; 
+    }
+} */
+
+/* End Videos */
 
 /* Start Profile */
 .headshot {

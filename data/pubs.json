@@ -1,11 +1,33 @@
 [
     {
+        "title"     : "Generating Clinically Translatable AI Models for Cancer Diagnostics",
+        "authors"   : "<b>Ahmed SR*</b>",
+        "journal"   : "PhD Dissertation (2024)",
+        "link"      : "https://dash.harvard.edu/handle/1/37378697",
+        "extra"     : "",
+        "slides"    : "https://drive.google.com/file/d/19PNrYMhCeQT3mbfoANbIlhCM4gKwokwZ/view?usp=sharing",
+        "bibtex"    : "",
+        "section"   : "Papers",
+        "selected"  : true
+    },
+    {
         "title"     : "Reproducible and clinically translatable deep neural networks for cervical screening.",
         "authors"   : "<b>Ahmed SR*</b>, Befano B*, Lemay A et al.",
         "journal"   : "Nature Sci Rep. 2023 Dec 8;13(1):21772",
         "link"      : "https://doi.org/10.1038/s41598-023-48721-1",
         "extra"     : "",
         "slides"    : "https://drive.google.com/drive/folders/123bS2llc5PDBogIeLOVMKr89NJ6mdm4M?usp=sharing",
+        "bibtex"    : "",
+        "section"   : "Papers",
+        "selected"  : true
+    },
+    {
+        "title"     : "Assessing generalizability of an AI-based visual test for cervical cancer screening.",
+        "authors"   : "<b>Ahmed SR</b>, Egemen D, Befano B, et al.",
+        "journal"   : "PLOS Digital Health. 2024 Oct 2;3(10):e0000364",
+        "link"      : "https://doi.org/10.1371/journal.pdig.0000364",
+        "extra"     : "",
+        "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
         "selected"  : true
@@ -26,17 +48,6 @@
         "authors"   : "<b>Ahmed SR</b>, Jia JM, Bruza P, et al.",
         "journal"   : "J Biomed Opt. 2018; 23(3):1-4.",
         "link"      : "https://doi.org/10.1117/1.JBO.23.3.030504",
-        "extra"     : "",
-        "slides"    : "",
-        "bibtex"    : "",
-        "section"   : "Papers",
-        "selected"  : true
-    },
-    {
-        "title"     : "Assessing generalizability of an AI-based visual test for cervical cancer screening.",
-        "authors"   : "<b>Ahmed SR</b>, Egemen D, Befano B, et al.",
-        "journal"   : "medRxiv, 2023.09. 26.23295263. submitted, under review at PLOS Digital Health (2024).",
-        "link"      : "https://doi.org/10.1101/2023.09.26.23295263",
         "extra"     : "",
         "slides"    : "",
         "bibtex"    : "",
@@ -198,6 +209,39 @@
         "selected"  : true
     },
     {
+        "title"     : "Addressing catastrophic forgetting by modulating global batch normalization statistics for medical domain expansion",
+        "authors"   : "Gupta S, Chang K,  ..., <b>Ahmed SR</b>, et al.",
+        "journal"   : "In: Proietto Salanitri, F., et al. Artificial Intelligence in Pancreatic Disease Detection and Diagnosis, and Personalized Incremental Learning in Medicine. PILM AIPAD 2024 in conjunction with MICCAI 2024. Lecture Notes in Computer Science, vol 15197. Springer, Cham.",
+        "link"      : "https://doi.org/10.1007/978-3-031-73483-0_6",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Papers",
+        "selected"  : true
+    },
+    {
+        "title"     : "Conformal prediction and Monte Carlo inference for addressing uncertainty in cervical cancer screening",
+        "authors"   : "Clark C, Kinder S, ..., <b>Ahmed SR</b>, et al.",
+        "journal"   : "In: Sudre, C.H., Mehta, R., Ouyang, C., Qin, C., Rakic, M., Wells, W.M. (eds) Uncertainty for Safe Utilization of Machine Learning in Medical Imaging. UNSURE 2024 in conjunction with MICCAI 2024. Lecture Notes in Computer Science, vol 15167. Springer, Cham.",
+        "link"      : "https://doi.org/10.1007/978-3-031-73158-7_19",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Papers",
+        "selected"  : true
+    },
+    {
+        "title"     : "Cycle-GANs Generated Difference Maps to Interpret Race Prediction from Medical Images.",
+        "authors"   : "Rathi L, Nebbia G, ..., <b>Ahmed SR</b>, et al.",
+        "journal"   : "In: Puyol-Antón, E., et al. Ethics and Fairness in Medical Imaging. FAIMI EPIMI 2024 in conjunction MICCAI 2024. Lecture Notes in Computer Science, vol 15198. Springer, Cham.",
+        "link"      : "https://doi.org/10.1007/978-3-031-72787-0_13",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Papers",
+        "selected"  : true
+    },
+    {
         "title"     : "Improving the repeatability of deep learning models using novel loss function combination and optimization approaches.",
         "authors"   : "<b>Ahmed SR</b>, Lemay A, Hoebel K et al.",
         "journal"   : "submitted, in-review (2023).",
@@ -277,17 +321,6 @@
     {
         "title"     : "Federated learning for prostate cancer vendor neutral models.",
         "authors"   : "Pulido-Arias D, Cleveland M, ..., <b>Ahmed SR</b> et al",
-        "journal"   : "submitted (2023).",
-        "link"      : "",
-        "extra"     : "",
-        "slides"    : "",
-        "bibtex"    : "",
-        "section"   : "Papers",
-        "selected"  : false
-    },
-    {
-        "title"     : "Addressing catastrophic forgetting for medical domain expansion.",
-        "authors"   : "Gupta S, Singh P, ..., <b>Ahmed SR</b>, et al.",
         "journal"   : "submitted (2023).",
         "link"      : "",
         "extra"     : "",
@@ -407,10 +440,21 @@
         "selected"  : true
     },
     {
+        "title"     : "Making the Most of Limited Data with Self-Supervised Learning for Breast Cancer Screening.",
+        "authors"   : "Clark C, Kinder S, <b>Ahmed SR</b>, et al.",
+        "journal"   : "27th MICCAI 2024 conference (MedAGI Workshop), Marrakesh, Morocco.",
+        "link"      : "",
+        "extra"     : "https://link.springer.com/book/10.1007/978-3-031-73471-7",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Presentations and Symposia",
+        "selected"  : true
+    },
+    {
         "title"     : "Deep learning-based non-invasive molecular profiling of brain metastases from MR imaging.",
         "authors"   : "Bhat S, Goncalves T, <b>Ahmed SR</b>, et al.",
         "journal"   : "The 21st International Symposium on Biomedical Imaging (ISBI) 2024, Athens, Greece",
-        "link"      : "",
+        "link"      : "https://doi.org/10.1109/ISBI56570.2024",
         "extra"     : "",
         "slides"    : "",
         "bibtex"    : "",
@@ -421,7 +465,18 @@
         "title"     : "Implications for squamocolumnar junction visibility on the performance of Automated Visual Evaluation algorithm for cervical cancer screening",
         "authors"   : "Desai K, Befano B, <b>Ahmed SR</b>, et al.",
         "journal"   : "International Papillomavirus Conference (IPVC) 2024",
-        "link"      : "",
+        "link"      : "https://info.kenes.com/Flip/IPVC24_IPVC 2024 ABSTRACTS E-BOOK/",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Presentations and Symposia",
+        "selected"  : false
+    },
+    {
+        "title"     : "Assessing cervical image quality for an AI-based Automated Visual Evaluation (AVE) algorithm in the PAVE strategy.",
+        "authors"   : "Desai K, Morin J, <b>Ahmed SR</b>, et al.",
+        "journal"   : "International Papillomavirus Conference (IPVC) 2024",
+        "link"      : "https://info.kenes.com/Flip/IPVC24_IPVC 2024 ABSTRACTS E-BOOK/",
         "extra"     : "",
         "slides"    : "",
         "bibtex"    : "",
@@ -432,18 +487,7 @@
         "title"     : "Deep learning-based cervical cancer visual evaluation test: designing the test result as 2-class or 3-class.",
         "authors"   : "Egemen D, Befano B, Rodriguez AC, <b>Ahmed SR</b>, et al.",
         "journal"   : "International Papillomavirus Conference (IPVC) 2023",
-        "link"      : "",
-        "extra"     : "",
-        "slides"    : "",
-        "bibtex"    : "",
-        "section"   : "Presentations and Symposia",
-        "selected"  : true
-    },
-    {
-        "title"     : "Conformal prediction and Monte Carlo inference for addressing uncertainty in cervical cancer screening.",
-        "authors"   : "Clark C, Kinder S, Egemen D, Befano B, Desai K, <b>Ahmed SR</b>, et al.",
-        "journal"   : "27th MICCAI 2024 conference, Marrakesh, Morocco.",
-        "link"      : "",
+        "link"      : "https://info.kenes.com/Flip/IPVC23_IPVC 2023 - Abstracts E-Book/",
         "extra"     : "",
         "slides"    : "",
         "bibtex"    : "",
@@ -509,17 +553,6 @@
         "title"     : "Self-supervision and diabetic retinopathy.",
         "authors"   : "Clark C, <b>Ahmed SR</b>, Singh P et al.",
         "journal"   : "The Association for Research in Vision and Opthalmology (ARVO) 2024 Annual Meeting",
-        "link"      : "",
-        "extra"     : "",
-        "slides"    : "",
-        "bibtex"    : "",
-        "section"   : "Presentations and Symposia",
-        "selected"  : false
-    },
-    {
-        "title"     : "Unravelling the effectiveness of AI-based race prediction model.",
-        "authors"   : "Rathi L, ..., <b>Ahmed SR</b>, et al.",
-        "journal"   : "submitted (2023)",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",

@@ -98,14 +98,14 @@ def fill_if_missing(json: Dict[str, str], field: str, default=""):
 def is_rakins(name):
     try:
         repo_url = subprocess.getoutput(
-            f"git -C {config.prefix} config --get remote.origin.url"
+            f'git -C "{config.prefix}" config --get remote.origin.url'
         ).split()[0]
     except Exception as _:
         repo_url = ""
 
     rakins_url  = "https://github.com/rknahmed0/rknahmed0.github.io.git" # SRA changed 12/30/2022 to HTTPS protocol vs SSH
     rakins_name = "Syed Rakin Ahmed"
-
+    
     return name == rakins_name and repo_url == rakins_url
 
 
@@ -370,7 +370,7 @@ def build_profile(profile: Dict[str, str]):
 
     # SRA added 09-16-2022    
     profile_html += '<div class="title">\n'
-    profile_html += '<h1>Syed Rakin Ahmed</h1>\n'
+    profile_html += '<h1>Syed Rakin Ahmed, PhD</h1>\n'
     profile_html += '</div>\n'
     profile_html += '<div class="subtitle">\n'
     profile_html += '<h2>\n'
@@ -420,11 +420,18 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<div class="video">UniWideComm</div>\n'
     profile_html += '</div>\n'  # close video-row
 
-    profile_html += '<div class="video-row center">\n'
+    profile_html += '<div class="video-row">\n'
+    profile_html += '<div class="video">DissDefense</div>\n'
     profile_html += '<div class="video">DartmouthFinAid</div>\n'
-    profile_html += '</div>\n'  # close video-row center
+    profile_html += '</div>\n'  # close video-row
     profile_html += '</div>\n'  # close videos
     profile_html += '</p>\n'
+
+    # profile_html += '<div class="video-row center">\n'
+    # profile_html += '<div class="video">DartmouthFinAid</div>\n'
+    # profile_html += '</div>\n'  # close video-row center
+    # profile_html += '</div>\n'  # close videos
+    # profile_html += '</p>\n'
 
     profile_html += "</div>\n"  # close profile
 
@@ -479,12 +486,14 @@ def build_index(
     hms_hooding = '<iframe width="385" height="217" src="https://drive.google.com/file/d/10HesprAQXGE-RgoiKGv3XppBXMJvxxn-/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     gsas_diploma = '<iframe width="385" height="217" src="https://drive.google.com/file/d/1qTySGLPS4J4h2cvjOJy-jbPa8D6xB6_Y/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     uniwide_comm = '<iframe width="385" height="217" src="https://drive.google.com/file/d/1QBbY3yzuSKG9M6TwtodA5uXLCD2Vnruv/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    diss_defense = '<iframe width="385" height="217" src="https://drive.google.com/file/d/19PNrYMhCeQT3mbfoANbIlhCM4gKwokwZ/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     dartmouth_finaid = '<iframe width="385" height="217" src="https://www.youtube.com/embed/VLV_LlrPOuI?start=290&end=515" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
     profile_html = profile_html.replace("HarvardSpeech", harvard_speech)
     profile_html = profile_html.replace("HMSHooding", hms_hooding)
     profile_html = profile_html.replace("GSASDiploma", gsas_diploma)
     profile_html = profile_html.replace("UniWideComm", uniwide_comm)
+    profile_html = profile_html.replace("DissDefense", diss_defense)
     profile_html = profile_html.replace("DartmouthFinAid", dartmouth_finaid)
 
     body_html += profile_html
