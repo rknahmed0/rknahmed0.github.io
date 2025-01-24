@@ -140,7 +140,7 @@ b {
 
 /* SRA added 06-25-2024 */
 /* Start Videos */
-.videos {
+/* .videos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,36 +160,36 @@ b {
 .video {
     width: 48%;
     margin: 0.5%;
-}
+} */
 
 /* End Videos */
 
-/* SRA added 01-31-2025 */
+/* SRA added 01-23-2025; ensures correct proportions based on screen size */
 /* Start Videos */
-/* .videos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-.video-row {
+.videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
 }
 
 .video {
-    flex: 1 1 45%; 
+    flex: 1 1 45%; /* Adjust the percentage as needed */
     margin: 10px;
     box-sizing: border-box;
 }
 
+.video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* Maintain a 16:9 aspect ratio */
+}
+
 @media (max-width: 600px) {
     .video {
-        flex: 1 1 100%; 
+        flex: 1 1 100%; /* Full width on small screens */
     }
-} */
+}
 
 /* End Videos */
 
