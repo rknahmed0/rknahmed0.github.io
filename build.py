@@ -435,12 +435,12 @@ def build_profile(profile: Dict[str, str]):
     
     # SRA 01-23-2025 edit to ensure videos are responsive to screen size
     profile_html += '<div class="videos">\n'
-    profile_html += f'<div class="video">HarvardSpeech</div>\n'
+    #profile_html += f'<div class="video">HarvardSpeech</div>\n'
     profile_html += f'<div class="video">HMSHooding</div>\n'
     profile_html += f'<div class="video">GSASDiploma</div>\n'
     profile_html += f'<div class="video">UniWideComm</div>\n'
     profile_html += f'<div class="video">DissDefense</div>\n'
-    profile_html += f'<div class="video">DartmouthFinAid</div>\n'
+    #profile_html += f'<div class="video">DartmouthFinAid</div>\n'
     profile_html += '</div>\n'
     
     profile_html += '</p>\n'
@@ -517,7 +517,7 @@ def build_index(
 
     body_html += profile_html
 
-    body_html += build_news(news_json, 7, False) # 5/5/2024 changed from 5 to 7 news items
+    body_html += build_news(news_json, 10, False) # 2/18/2025 changed from 7 to 10 news items
     body_html += build_pubs(pubs_json, False)
     body_html += "</div>\n"
     body_html += footer_html
