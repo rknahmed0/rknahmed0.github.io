@@ -395,11 +395,11 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<p>\n'
     profile_html += '<a href="%s">syedrakin_ahmed@fas.harvard.edu</a> | ' % profile["harvard"]
     profile_html += '<a href="%s">rakin@mit.edu</a> | ' % profile["mit"]
-    profile_html += '<a href="%s">srahmed@mgh.harvard.edu</a>\n' % profile["mgh"]
+    profile_html += '<a href="%s">syed.rakin.ahmed.med@dartmouth.edu</a>\n' % profile["dartm"]
     profile_html += '</p>\n'
     
     profile_html += '<p>\n'
-    profile_html += 'United States Medical Licensing Exam (USMLE) Step 1 Score: <a href="%s">260</a> <a href=""%s">(96th percentile, top 4 percent)</a>' % (profile["stepone"], profile["steponep"])
+    profile_html += '<a href="%s">United States Medical Licensing Exam (USMLE) Step 1 Score: 260</a> (top 4 percent)' % (profile["stepone"])
     profile_html += '</p>\n'
 
     profile_html += '<p>\n'
