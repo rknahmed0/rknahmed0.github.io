@@ -393,7 +393,7 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '</p>\n'
     
     profile_html += '<p>\n'
-    profile_html += '<a href="%s">syedrakin_ahmed@fas.harvard.edu</a> | ' % profile["harvard"]
+    # profile_html += '<a href="%s">syedrakin_ahmed@fas.harvard.edu</a> | ' % profile["harvard"]
     profile_html += '<a href="%s">rakin@mit.edu</a> | ' % profile["mit"]
     profile_html += '<a href="%s">syed.rakin.ahmed.med@dartmouth.edu</a>\n' % profile["dartm"]
     profile_html += '</p>\n'
