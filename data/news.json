@@ -1,5 +1,9 @@
 [
     {
+        "date": "02/2025",
+        "text": "My work on generalizable deep learning models for image quality assessment was published in <a href=\"https://doi.org/10.1038/s41598-025-90024-0\">Nature Sci Rep</a>."
+    },
+    {
         "date": "10/2024",
         "text": "My work on assessing generalizability of deep learning models for cancer detection was published in <a href=\"https://doi.org/10.1371/journal.pdig.0000364\">PLOS Digital Health</a> and subsequently featured on an <a href=\"https://datascience.cancer.gov/news-events/news/nci-study-tests-performance-ai-based-cervical-cancer-screening\">NCI article</a>, while additional work on AI for cervical cancer screening was presented at <a href=\"https://info.kenes.com/Flip/IPVC24_IPVC 2024 ABSTRACTS E-BOOK/\">IPVC 2024</a>. Additionally, four manuscripts from our work on uncertainty and generalizability of AI models were presented in MICCAI 2024, and published in the corresponding journals: <a href=\"https://link.springer.com/book/10.1007/978-3-031-73471-7\">MedAGI 2024</a>, <a href=\"https://doi.org/10.1007/978-3-031-73158-7_19\">UNSURE 2024</a>, <a href=\"https://doi.org/10.1007/978-3-031-73483-0_6\">PILM-AIPAD 2024</a>, <a href=\"https://doi.org/10.1007/978-3-031-72787-0_13\">FAIMI-EPIMI 2024</a>."
     },

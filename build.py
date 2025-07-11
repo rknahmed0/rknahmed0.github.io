@@ -526,7 +526,7 @@ def build_index(
 
     body_html += profile_html
 
-    body_html += build_news(news_json, 10, False) # 2/18/2025 changed from 7 to 10 news items
+    body_html += build_news(news_json, 11, False) # 2/18/2025 changed from 7 to 11 news items
     body_html += build_pubs(pubs_json, False)
     body_html += "</div>\n"
     body_html += footer_html
