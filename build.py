@@ -385,15 +385,23 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<a href="%s">Dartmouth Medicine Profile</a>\n' % profile["dmprof"]
     profile_html += '</p>\n'
 
-    profile_html += '</p>\n'
+    profile_html += '<p>\n'
     profile_html += '<a href="%s">UHS</a> | ' % profile["uhsprof"]
     profile_html += '<a href="%s">Resident Tutor</a> | ' % profile["cabot"]
     profile_html += '<a href="%s">FiVE</a> | ' % profile["five"]
-    profile_html += '<a href="%s">IV Fellow</a>\n' % profile["ivfell"]
+    profile_html += '<a href="%s">IV Fellow</a> | ' % profile["ivfell"]
+    profile_html += '<a href="%s">NCI.gov feature</a>\n' % profile["nci"]
     profile_html += '</p>\n'
     
     profile_html += '<p>\n'
-    # profile_html += '<a href="%s">syedrakin_ahmed@fas.harvard.edu</a> | ' % profile["harvard"]
+    profile_html += 'Alpha Omega Alpha | '
+    profile_html += 'Phi Beta Kappa | '
+    profile_html += 'Tau Beta Pi | '
+    profile_html += 'Sigma Xi'
+    profile_html += '</p>\n'
+
+    profile_html += '<p>\n'
+    profile_html += '<a href="%s">syedrakin_ahmed@fas.harvard.edu</a> | ' % profile["harvard"]
     profile_html += '<a href="%s">rakin@mit.edu</a> | ' % profile["mit"]
     profile_html += '<a href="%s">syed.rakin.ahmed.med@dartmouth.edu</a>\n' % profile["dartm"]
     profile_html += '</p>\n'
@@ -404,7 +412,7 @@ def build_profile(profile: Dict[str, str]):
 
     profile_html += '<p>\n'
     profile_html += 'SAT I: 2310 (770 CR, 770 Math, 770 Writing) | '
-    profile_html += 'SAT II: 800 Math II, 800 Chemistry, 790 Physics'
+    profile_html += 'SAT II: 2390 (800 Math II, 800 Chem., 790 Phys.)'
     profile_html += '</p>\n'
 
     profile_html += '<div class="hbar"></div>\n'
@@ -526,7 +534,7 @@ def build_index(
 
     body_html += profile_html
 
-    body_html += build_news(news_json, 11, False) # 2/18/2025 changed from 7 to 11 news items
+    body_html += build_news(news_json, 15, False) # 9/1/2025 changed from 11 to 15 news items
     body_html += build_pubs(pubs_json, False)
     body_html += "</div>\n"
     body_html += footer_html

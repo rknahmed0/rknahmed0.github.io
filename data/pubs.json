@@ -2,7 +2,7 @@
     {
         "title"     : "Generating Clinically Translatable AI Models for Cancer Diagnostics",
         "authors"   : "<b>Ahmed SR*</b>",
-        "journal"   : "PhD Dissertation (2024)",
+        "journal"   : "Doctoral Dissertation, Harvard University and Massachusetts Institute of Technology; 2024",
         "link"      : "https://dash.harvard.edu/handle/1/37378697",
         "extra"     : "",
         "slides"    : "https://drive.google.com/file/d/1uWCyGqdA-DHvsmdt7j30okcx-4FdLIg_/view?usp=sharing",
@@ -239,45 +239,12 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
-        "selected"  : true
+        "selected"  : false
     },
     {
         "title"     : "Improving the repeatability of deep learning models using novel loss function combination and optimization approaches.",
         "authors"   : "<b>Ahmed SR</b>, Lemay A, Hoebel K et al.",
-        "journal"   : "submitted, in-review (2023).",
-        "link"      : "",
-        "extra"     : "",
-        "slides"    : "",
-        "bibtex"    : "",
-        "section"   : "Papers",
-        "selected"  : false
-    },
-    {
-        "title"     : "Design and multi-rater evaluation of a cervical visual treatability classifier.",
-        "authors"   : "<b>Ahmed SR</b>, Jeronimo J, Hansen N, et al.",
-        "journal"   : "in preparation for submission (2023).",
-        "link"      : "",
-        "extra"     : "",
-        "slides"    : "",
-        "bibtex"    : "",
-        "section"   : "Papers",
-        "selected"  : false
-    },
-    {
-        "title"     : "CervSSL: foundation models for cervical cancer screening using self-supervised learning.",
-        "authors"   : "<b>Ahmed SR*</b>, Clark C*, Singh P et al.",
-        "journal"   : "in preparation for submission (2023).",
-        "link"      : "",
-        "extra"     : "",
-        "slides"    : "",
-        "bibtex"    : "",
-        "section"   : "Papers",
-        "selected"  : false
-    },
-    {
-        "title"     : "An assessment of novel distance metric correlation with out-of-distribution performance of deep learning models.",
-        "authors"   : "<b>Ahmed SR</b>, Lu C, Clark C, et al.",
-        "journal"   : "in preparation for submission (2023).",
+        "journal"   : "submitted, under review.",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
@@ -288,7 +255,18 @@
     {
         "title"     : "A robust, tiered deep neural network for detection of actionable genomic alterations in brain metastases.",
         "authors"   : "<b>Ahmed SR*</b>, Brahmavar SB*, Bridge C, et al.",
-        "journal"   : "in preparation for submission (2023).",
+        "journal"   : "in preparation for submission.",
+        "link"      : "",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Papers",
+        "selected"  : false
+    },
+    {
+        "title"     : "An assessment of novel distance metric correlation with out-of-distribution performance of deep learning models.",
+        "authors"   : "<b>Ahmed SR</b>, Lu C, Clark C, et al.",
+        "journal"   : "in preparation for submission.",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
@@ -299,7 +277,18 @@
     {
         "title"     : "Automatic deep learning-based segmentation and treatment response assessment of brain metastases on magnetic resonance imaging.",
         "authors"   : "Patel J, Gidwani M, ..., <b>Ahmed SR</b>, et al.",
-        "journal"   : "submitted, in-review (2023).",
+        "journal"   : "submitted, under review.",
+        "link"      : "",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Papers",
+        "selected"  : false
+    },
+    {
+        "title"     : "Applying self-supervision and conformal prediction for cervical cancer screening.",
+        "authors"   : "Clark C, Kinder S, …, <b>Ahmed SR</b>, et al. ",
+        "journal"   : "submitted, under review.",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
@@ -310,7 +299,18 @@
     {
         "title"     : "AdrenoBERT: automated multiclass categorization of adrenal abnormalities from free-text radiology reports using transformer language models.",
         "authors"   : "Raghavan S, Singh P, ..., <b>Ahmed SR</b> et al.",
-        "journal"   : "submitted, in-review (2023).",
+        "journal"   : "submitted, under review.",
+        "link"      : "",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Papers",
+        "selected"  : false
+    },
+    {
+        "title"     : "Design and multi-rater evaluation of a cervical visual treatability classifier",
+        "authors"   : "<b>Ahmed SR</b>, Jeronimo J, Hansen N, et al.",
+        "journal"   : "in preparation for submission.",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
@@ -321,7 +321,7 @@
     {
         "title"     : "Federated learning for prostate cancer vendor neutral models.",
         "authors"   : "Pulido-Arias D, Cleveland M, ..., <b>Ahmed SR</b> et al",
-        "journal"   : "submitted (2023).",
+        "journal"   : "submitted.",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
@@ -332,7 +332,7 @@
     {
         "title"     : "A diffusion-inspired self-supervised framework for affine medical image registration.",
         "authors"   : "Veturi YA, <b>Ahmed SR</b>, Singh P, Kalpathy-Cramer J et al.",
-        "journal"   : "in preparation for submission (2023).",
+        "journal"   : "in preparation for submission.",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
@@ -343,7 +343,7 @@
     {
         "title"     : "The process of disentangling AI features associates with race and ethnicity in retinal images.",
         "authors"   : "Tyagi R, Singh P, ..., <b>Ahmed SR</b>, et al.",
-        "journal"   : "in preparation for submission (2023).",
+        "journal"   : "in preparation for submission.",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
@@ -361,6 +361,17 @@
         "bibtex"    : "",
         "section"   : "Papers",
         "selected"  : false
+    },
+    {
+        "title"     : "Distance metrics predict out-of-distribution performance of AI oncology models for clinical deployment.",
+        "authors"   : "<b>Ahmed SR</b>, Lu C, Kalpathy-Cramer J",
+        "journal"   : "American Society for Radiation Oncology (ASTRO) 2025 Annual Meeting",
+        "link"      : "https://amportal.astro.org/sessions/pqa-09-21643/distance-metrics-predict-out-of-distribution-performance-of-ai-oncology-models-for-clinical-d-108616",
+        "extra"     : "",
+        "slides"    : "",
+        "bibtex"    : "",
+        "section"   : "Presentations and Symposia",
+        "selected"  : true
     },
     {
         "title"     : "A deep learning framework enables non-invasive detection of tumor mutational burden in brain metastases.",
@@ -563,7 +574,7 @@
     {
         "title"     : "Monitoring disease progression with stable diffusion: a visual approach.",
         "authors"   : "Kumar S, ..., <b>Ahmed SR</b>, et al.",
-        "journal"   : "submitted (2023)",
+        "journal"   : "submitted",
         "link"      : "",
         "extra"     : "",
         "slides"    : "",
