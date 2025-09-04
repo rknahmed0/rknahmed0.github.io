@@ -452,12 +452,12 @@ def build_profile(profile: Dict[str, str]):
     
     # SRA 01-23-2025 edit to ensure videos are responsive to screen size
     profile_html += '<div class="videos">\n'
-    #profile_html += f'<div class="video">HarvardSpeech</div>\n'
+    profile_html += f'<div class="video">HarvardSpeech</div>\n'
     profile_html += f'<div class="video">HMSHooding</div>\n'
     profile_html += f'<div class="video">GSASDiploma</div>\n'
     profile_html += f'<div class="video">UniWideComm</div>\n'
     profile_html += f'<div class="video">DissDefense</div>\n'
-    #profile_html += f'<div class="video">DartmouthFinAid</div>\n'
+    profile_html += f'<div class="video">DartmouthFinAid</div>\n'
     profile_html += '</div>\n'
     
     profile_html += '</p>\n'
