@@ -1,10 +1,10 @@
 [
     {
         "title"     : "Generating Clinically Translatable AI Models for Cancer Diagnostics",
-        "authors"   : "<b>Ahmed SR*</b>",
+        "authors"   : "<b>Ahmed SR</b>",
         "journal"   : "Doctoral Dissertation, Harvard University and Massachusetts Institute of Technology; 2024",
         "link"      : "https://dash.harvard.edu/handle/1/37378697",
-        "extra"     : "",
+        "extra"     : "https://drive.google.com/drive/folders/1HruQQ46AcewBQ-ANmgOAfFJYg4Jsey3G?usp=sharing",
         "slides"    : "https://drive.google.com/file/d/1uWCyGqdA-DHvsmdt7j30okcx-4FdLIg_/view?usp=sharing",
         "bibtex"    : "",
         "section"   : "Papers",
@@ -15,8 +15,8 @@
         "authors"   : "<b>Ahmed SR</b>, Befano B, Egemen D, et al.",
         "journal"   : "Nature Sci Rep. 2025 Feb 21;15(1):6312.",
         "link"      : "https://doi.org/10.1038/s41598-025-90024-0",
-        "extra"     : "",
-        "slides"    : "",
+        "extra"     : "https://drive.google.com/drive/folders/1HruQQ46AcewBQ-ANmgOAfFJYg4Jsey3G?usp=sharing",
+        "slides"    : "https://www.cancer.gov/about-nci/organization/cbiit/news-events/news/2024/nci-study-tests-performance-ai-based-cervical-cancer-screening",
         "bibtex"    : "",
         "section"   : "Papers",
         "selected"  : true
@@ -26,19 +26,19 @@
         "authors"   : "<b>Ahmed SR</b>, Egemen D, Befano B, et al.",
         "journal"   : "PLOS Digital Health. 2024 Oct 2;3(10):e0000364",
         "link"      : "https://doi.org/10.1371/journal.pdig.0000364",
-        "extra"     : "https://datascience.cancer.gov/news-events/news/nci-study-tests-performance-ai-based-cervical-cancer-screening",
-        "slides"    : "",
+        "extra"     : "https://drive.google.com/drive/folders/1HruQQ46AcewBQ-ANmgOAfFJYg4Jsey3G?usp=sharing",
+        "slides"    : "https://www.cancer.gov/about-nci/organization/cbiit/news-events/news/2024/nci-study-tests-performance-ai-based-cervical-cancer-screening",
         "bibtex"    : "",
         "section"   : "Papers",
         "selected"  : true
     },
     {
         "title"     : "Reproducible and clinically translatable deep neural networks for cervical screening.",
-        "authors"   : "<b>Ahmed SR*</b>, Befano B*, Lemay A et al.",
+        "authors"   : "<b>Ahmed SR</b>, Befano B, Lemay A et al.",
         "journal"   : "Nature Sci Rep. 2023 Dec 8;13(1):21772",
         "link"      : "https://doi.org/10.1038/s41598-023-48721-1",
-        "extra"     : "",
-        "slides"    : "https://drive.google.com/drive/folders/1HruQQ46AcewBQ-ANmgOAfFJYg4Jsey3G?usp=sharing",
+        "extra"     : "https://drive.google.com/drive/folders/1HruQQ46AcewBQ-ANmgOAfFJYg4Jsey3G?usp=sharing",
+        "slides"    : "https://www.cancer.gov/about-nci/organization/cbiit/news-events/news/2024/nci-study-tests-performance-ai-based-cervical-cancer-screening",
         "bibtex"    : "",
         "section"   : "Papers",
         "selected"  : true
@@ -254,7 +254,7 @@
     },
     {
         "title"     : "A robust, tiered deep neural network for detection of actionable genomic alterations in brain metastases.",
-        "authors"   : "<b>Ahmed SR*</b>, Brahmavar SB*, Bridge C, et al.",
+        "authors"   : "<b>Ahmed SR</b>, Brahmavar SB, Bridge C, et al.",
         "journal"   : "in preparation for submission.",
         "link"      : "",
         "extra"     : "",
