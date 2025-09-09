@@ -382,7 +382,13 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<a href="%s">ORCID</a> | ' % profile["orcid"]
     profile_html += '<a href="%s">Google Scholar</a> | ' % profile["scholar"]
     profile_html += '<a href="%s">Github</a>\n' % profile["github"]
-    
+
+    profile_html += '<p>\n'
+    profile_html += 'Engineer | '
+    profile_html += 'Doctor | '
+    profile_html += 'Computer Scientist'
+    profile_html += '</p>\n'
+
     profile_html += '<p>\n'
     profile_html += '<a href="%s">Harvard Profile</a> | ' % profile["hvprof"]
     profile_html += '<a href="%s">Dartmouth Medicine Profile</a>\n' % profile["dmprof"]
@@ -514,20 +520,20 @@ def build_index(
             <h1>Key Research Areas</h1>
             <div class="research-areas-row">
                 <a href="cervical.html" class="research-area">
-                    <img src="images/cervical.jpg" alt="Globally Translated Cervical Cancer AI">
-                    <div class="caption">Globally Translated Cervical Cancer AI</div>
+                    <img src="images/cervical.jpg" alt="Globally Deployed Cervical Cancer AI">
+                    <div class="caption">Globally Deployed Cervical Cancer AI</div>
                 </a>
                 <a href="brain.html" class="research-area">
-                    <img src="images/brain.jpg" alt="DL in Brain Tumors">
-                    <div class="caption">DL in Brain Tumors</div>
+                    <img src="images/brain.jpg" alt="AI/DL in Brain Tumors">
+                    <div class="caption">AI/DL in Brain Tumors</div>
                 </a>
                 <a href="comptumorbiology.html" class="research-area">
-                    <img src="images/comptumorbiology.jpg" alt="Computational Imaging in Tumor Biology">
-                    <div class="caption">Computational Imaging in Tumor Biology</div>
+                    <img src="images/comptumorbiology.jpg" alt="Computational Imaging for Tumor Biology">
+                    <div class="caption">Computational Imaging for Tumor Biology</div>
                 </a>
                 <a href="techdl.html" class="research-area">
-                    <img src="images/techdl.jpg" alt="Technical DL Advances">
-                    <div class="caption">Technical DL Advances</div>
+                    <img src="images/techdl.jpg" alt="Technical AI/DL Advances">
+                    <div class="caption">Technical AI/DL Advances</div>
                 </a>
             </div>
         </section>
@@ -768,10 +774,10 @@ if __name__ == "__main__":
     # SRA added 09-08-2025
     # Define your research area mapping (area name in your pubs.json)
     RESEARCH_AREAS = [
-        ("cervical", "Globally Translated Cervical Cancer AI"),
-        ("brain", "DL in Brain Tumors"),
-        ("comptumorbiology", "Computational Imaging in Tumor Biology"),
-        ("techdl", "Technical DL Advances"),
+        ("cervical", "Globally Deployed Cervical Cancer AI"),
+        ("brain", "AI/DL in Brain Tumors"),
+        ("comptumorbiology", "Computational Imaging for Tumor Biology"),
+        ("techdl", "Technical AI/DL Advances"),
     ]
 
     # For each research area, filter pubs and generate a page
