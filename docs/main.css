@@ -115,55 +115,6 @@ b {
     font-size: smaller;
 }
 
-/* SRA added 06-25-2024 */
-/* Start Videos */
-
-/* .video {
-    display: grid;
-    grid-template-columns:  repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
-    max-width: 800px;
-    width: 100%;
-}
-
-.video iframe {
-    width: 100%;
-    height: 200px;
-}
-
-.video .full-width {
-    grid-column: span 2;
-} */
-
-/* End Videos */
-
-/* SRA added 06-25-2024 */
-/* Start Videos */
-/* .videos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.video-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 1em;
-}
-
-.video-row.center {
-    justify-content: center;
-}
-
-.video {
-    width: 48%;
-    margin: 0.5%;
-} */
-
-/* End Videos */
-
 /* SRA added 01-23-2025; ensures correct proportions based on screen size */
 /* Start Videos */
 
@@ -394,4 +345,64 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+/* Key Research Areas Section; SRA added 09-08-2025 */
+.key-research-areas {
+    margin: 1.5em 0;
+    text-align: center;
+}
+.key-research-areas h1 {
+    margin-top: 0;      /* Reduce gap above */
+    margin-bottom: 1em;   /* Space below, adjust as needed */
+    font-size: 2em;       /* Increase font size, adjust as desired */
+    font-weight: bold;
+    padding-top: 0;   /* <-- Add this line to override the global h1 padding */
+}
+.research-areas-row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping on large screens */
+    justify-content: center;
+    gap: 2em;
+}
+.research-area {
+    flex: 0 1 22%; /* 4 columns with some gap */
+    max-width: 220px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+.research-area img {
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+    background: #000435;      /* Optional: set a background color for padding area */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.research-area .caption {
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+@media (max-width: 900px) {
+    .research-areas-row {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+    .research-area {
+        flex: 1 1 45%;
+        max-width: 350px;
+        margin-bottom: 1em;
+    }
+}
+@media (max-width: 600px) {
+    .research-area {
+        flex: 1 1 100%;
+        max-width: 95vw;
+    }
 }

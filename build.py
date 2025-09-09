@@ -10,6 +10,8 @@ import collections
 from typing import Dict, List
 from datetime import datetime
 
+SHOW_KEY_RESEARCH_AREAS = True  # Set to False to hide the section # SRA added 09-08-2025
+
 Config = collections.namedtuple(
     "Config", ["verbosity", "prefix", "target", "templates"]
 )
@@ -331,7 +333,7 @@ def build_pubs_inner(pubs: List[Dict[str, str]], title: str, full: bool):
     return pubs_html
 
 
-def build_pubs(pubs: List[Dict[str, str]], full: bool):
+def build_pubs(pubs: List[Dict[str, str]], full: bool, title: str = None): # SRA added title parameter 09-08-2025
     if len(pubs) == 0:
         return ""
 
@@ -343,9 +345,10 @@ def build_pubs(pubs: List[Dict[str, str]], full: bool):
         pubs_html += '<h1>Selected Publications <small style="font-weight: 300; float: right; padding-top: 0.23em">(<a href="./pubs.html">See all publications</a>)</small></h1>'
     elif full:
         link = '<a href="./index.html">%s</a>' % meta_json["name"]
+        heading = title if title else "Publications"  # SRA added 09-08-2025
         pubs_html += (
-            '<h1>Publications <small style="font-weight: 300; float: right; padding-top: 0.23em">%s</small></h1>\n'
-            % link
+            '<h1>%s <small style="font-weight: 300; float: right; padding-top: 0.23em">%s</small></h1>\n'
+            % (heading, link) # SRA modified to include custom heading 09-08-2025
         )
     else:
         pubs_html += "<h1>Publications</h1>"
@@ -427,29 +430,6 @@ def build_profile(profile: Dict[str, str]):
     # SRA added 06-25-2024
     profile_html += '<p>\n'
     
-    # SRA 06-25-2025 initial attempt at video embedding
-    # profile_html += '<div class="videos">\n'
-    # profile_html += '<div class="video-row">\n'
-    # profile_html += '<div class="video">HarvardSpeech</div>\n'
-    # profile_html += '<div class="video">HMSHooding</div>\n'
-    # profile_html += '</div>\n'  # close video-row
-
-    # profile_html += '<div class="video-row">\n'
-    # profile_html += '<div class="video">GSASDiploma</div>\n'
-    # profile_html += '<div class="video">UniWideComm</div>\n'
-    # profile_html += '</div>\n'  # close video-row
-
-    # profile_html += '<div class="video-row">\n'
-    # profile_html += '<div class="video">DissDefense</div>\n'
-    # profile_html += '<div class="video">DartmouthFinAid</div>\n'
-    # profile_html += '</div>\n'  # close video-row
-    # profile_html += '</div>\n'  # close videos
-
-    # profile_html += '<div class="video-row center">\n'
-    # profile_html += '<div class="video">DartmouthFinAid</div>\n'
-    # profile_html += '</div>\n'  # close video-row center
-    # profile_html += '</div>\n'  # close videos
-    
     # SRA 01-23-2025 edit to ensure videos are responsive to screen size
     profile_html += '<div class="videos">\n'
     profile_html += f'<div class="video">HarvardSpeech</div>\n'
@@ -510,13 +490,6 @@ def build_index(
     # SRA added 06-25-2024
     profile_html = build_profile(profile_json)
 
-    # harvard_speech = '<iframe width="385" height="217" src="https://drive.google.com/file/d/1gUfnXREFha1onxQCOCd728FaRAqFklJY/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    # hms_hooding = '<iframe width="385" height="217" src="https://drive.google.com/file/d/10HesprAQXGE-RgoiKGv3XppBXMJvxxn-/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    # gsas_diploma = '<iframe width="385" height="217" src="https://drive.google.com/file/d/1qTySGLPS4J4h2cvjOJy-jbPa8D6xB6_Y/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    # uniwide_comm = '<iframe width="385" height="217" src="https://drive.google.com/file/d/1QBbY3yzuSKG9M6TwtodA5uXLCD2Vnruv/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    # diss_defense = '<iframe width="385" height="217" src="https://drive.google.com/file/d/19PNrYMhCeQT3mbfoANbIlhCM4gKwokwZ/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    # dartmouth_finaid = '<iframe width="385" height="217" src="https://www.youtube.com/embed/VLV_LlrPOuI?start=290&end=515" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-
     # SRA 01-23-2025 removed width="385" and height="217" to allow for responsive design
     harvard_speech = '<iframe src="https://drive.google.com/file/d/1gUfnXREFha1onxQCOCd728FaRAqFklJY/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     hms_hooding = '<iframe src="https://drive.google.com/file/d/10HesprAQXGE-RgoiKGv3XppBXMJvxxn-/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
@@ -533,6 +506,32 @@ def build_index(
     profile_html = profile_html.replace("DartmouthFinAid", dartmouth_finaid)
 
     body_html += profile_html
+
+    # Key Research Areas Section (toggle with SHOW_KEY_RESEARCH_AREAS) # SRA added 09-08-2025
+    if SHOW_KEY_RESEARCH_AREAS:
+        body_html += '''
+        <section class="key-research-areas">
+            <h1>Key Research Areas</h1>
+            <div class="research-areas-row">
+                <a href="cervical.html" class="research-area">
+                    <img src="images/cervical.jpg" alt="Globally Translated Cervical Cancer AI">
+                    <div class="caption">Globally Translated Cervical Cancer AI</div>
+                </a>
+                <a href="brain.html" class="research-area">
+                    <img src="images/brain.jpg" alt="DL in Brain Tumors">
+                    <div class="caption">DL in Brain Tumors</div>
+                </a>
+                <a href="comptumorbiology.html" class="research-area">
+                    <img src="images/comptumorbiology.jpg" alt="Computational Imaging in Tumor Biology">
+                    <div class="caption">Computational Imaging in Tumor Biology</div>
+                </a>
+                <a href="techdl.html" class="research-area">
+                    <img src="images/techdl.jpg" alt="Technical DL Advances">
+                    <div class="caption">Technical DL Advances</div>
+                </a>
+            </div>
+        </section>
+        '''    
 
     body_html += build_news(news_json, 15, False) # 9/1/2025 changed from 11 to 15 news items
     body_html += build_pubs(pubs_json, False)
@@ -575,9 +574,9 @@ def build_news_page(
 
 
 def build_pubs_page(
-    pubs_json: List[Dict[str, str]], links: Dict[str, str], has_dark: bool
+    pubs_json: List[Dict[str, str]], links: Dict[str, str], has_dark: bool, title: str = None # SRA added title parameter 09-08-2025
 ):
-    content = build_pubs(pubs_json, True)
+    content = build_pubs(pubs_json, True, title) # SRA modified to pass title 09-08-2025
 
     if content == "":
         return ""
@@ -765,6 +764,28 @@ if __name__ == "__main__":
     index_page  = build_index(
         profile_json, news_json, pubs_json, auto_links_json, has_dark
     )
+
+    # SRA added 09-08-2025
+    # Define your research area mapping (area name in your pubs.json)
+    RESEARCH_AREAS = [
+        ("cervical", "Globally Translated Cervical Cancer AI"),
+        ("brain", "DL in Brain Tumors"),
+        ("comptumorbiology", "Computational Imaging in Tumor Biology"),
+        ("techdl", "Technical DL Advances"),
+    ]
+
+    # For each research area, filter pubs and generate a page
+    for area_slug, area_title in RESEARCH_AREAS:
+        # Filter publications for this area (assuming 'area' field in pubs.json matches area_title)
+        area_pubs = [pub for pub in pubs_json if pub["area"] == area_title]
+        if not area_pubs:
+            continue  # Skip if no publications for this area
+
+        # Build the page using your existing function
+        area_page = build_pubs_page(area_pubs, auto_links_json, has_dark, title=area_title)
+
+        # Write the file (e.g., docs/ai-oncology.html)
+        write_file(f"{config.target}/{area_slug}.html", area_page)
 
     # Write to files
     status("\nWriting website:")

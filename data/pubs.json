@@ -8,6 +8,7 @@
         "slides"    : "https://drive.google.com/file/d/1uWCyGqdA-DHvsmdt7j30okcx-4FdLIg_/view?usp=sharing",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "None",
         "selected"  : true
     },
     {
@@ -19,6 +20,7 @@
         "slides"    : "https://www.cancer.gov/about-nci/organization/cbiit/news-events/news/2024/nci-study-tests-performance-ai-based-cervical-cancer-screening",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : true
     },
     {
@@ -30,6 +32,7 @@
         "slides"    : "https://www.cancer.gov/about-nci/organization/cbiit/news-events/news/2024/nci-study-tests-performance-ai-based-cervical-cancer-screening",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : true
     },
     {
@@ -41,6 +44,7 @@
         "slides"    : "https://www.cancer.gov/about-nci/organization/cbiit/news-events/news/2024/nci-study-tests-performance-ai-based-cervical-cancer-screening",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : true
     },  
     {
@@ -52,6 +56,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -63,6 +68,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Computational Imaging in Tumor Biology",
         "selected"  : true
     },  
     {
@@ -74,6 +80,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Technical DL Advances",
         "selected"  : true
     },
     {
@@ -85,6 +92,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -96,6 +104,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Computational Imaging in Tumor Biology",
         "selected"  : true
     },
     {
@@ -107,6 +116,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Computational Imaging in Tumor Biology",
         "selected"  : true
     },
     {
@@ -118,6 +128,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Technical DL Advances",
         "selected"  : true
     },
     {
@@ -129,6 +140,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },        
     {
@@ -140,6 +152,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -151,6 +164,7 @@
         "slides"    : "https://docs.google.com/presentation/d/1zsTt-_1NjoEbu-M6fZ446iQTcK2OUdKL/edit?usp=sharing&ouid=104361848766357625935&rtpof=true&sd=true",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Computational Imaging in Tumor Biology",
         "selected"  : false
     },
     {
@@ -162,6 +176,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -173,6 +188,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : true
     },
     {
@@ -184,6 +200,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : true
     },
     {
@@ -195,6 +212,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : true
     },
     {
@@ -206,6 +224,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -217,6 +236,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Technical DL Advances",
         "selected"  : true
     },
     {
@@ -228,6 +248,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : true
     },
     {
@@ -239,6 +260,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Technical DL Advances",
         "selected"  : false
     },
     {
@@ -250,6 +272,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Technical DL Advances",
         "selected"  : false
     },
     {
@@ -261,6 +284,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "DL in Brain Tumors",
         "selected"  : false
     },
     {
@@ -272,6 +296,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Technical DL Advances",
         "selected"  : false
     },
     {
@@ -283,6 +308,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "DL in Brain Tumors",
         "selected"  : false
     },
     {
@@ -294,6 +320,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : false
     }, 
     {
@@ -305,6 +332,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Computational Imaging in Tumor Biology",
         "selected"  : false
     },
     {
@@ -316,6 +344,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : false
     },
     {
@@ -327,6 +356,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Computational Imaging in Tumor Biology",
         "selected"  : false
     },
     {
@@ -338,6 +368,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Technical DL Advances",
         "selected"  : false
     },
     {
@@ -349,6 +380,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Technical DL Advances",
         "selected"  : false
     },
     {
@@ -360,6 +392,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Papers",
+        "area"      : "Computational Imaging in Tumor Biology",
         "selected"  : false
     },
     {
@@ -371,6 +404,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Technical DL Advances",
         "selected"  : true
     },
     {
@@ -382,6 +416,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -393,6 +428,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },      
     {
@@ -404,6 +440,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Technical DL Advances",
         "selected"  : true
     },
     {
@@ -415,6 +452,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Technical DL Advances",
         "selected"  : true
     },
     {
@@ -426,6 +464,7 @@
         "slides"    : "https://2022.midl.io/papers/f_s_6",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Technical DL Advances",
         "selected"  : true
     },
     {
@@ -437,6 +476,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "DL in Brain Tumors",
         "selected"  : false
     },
     {
@@ -448,6 +488,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -459,6 +500,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Computational Imaging in Tumor Biology",
         "selected"  : true
     },
     {
@@ -470,6 +512,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -481,6 +524,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : false
     },
     {
@@ -492,6 +536,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : false
     },
     {
@@ -503,6 +548,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Globally Translated Cervical Cancer AI",
         "selected"  : false
     },
     {
@@ -514,6 +560,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Computational Imaging in Tumor Biology",
         "selected"  : true
     },
     {
@@ -525,6 +572,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -536,6 +584,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "DL in Brain Tumors",
         "selected"  : true
     },
     {
@@ -547,6 +596,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "DL in Brain Tumors",
         "selected"  : false
     },
     {
@@ -558,6 +608,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Technical DL Advances",
         "selected"  : false
     },
     {
@@ -569,6 +620,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Technical DL Advances",
         "selected"  : false
     },
     {
@@ -580,6 +632,7 @@
         "slides"    : "",
         "bibtex"    : "",
         "section"   : "Presentations and Symposia",
+        "area"      : "Technical DL Advances",
         "selected"  : false
     }    
 ]
