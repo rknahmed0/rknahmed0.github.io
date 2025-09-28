@@ -90,6 +90,22 @@ b {
     font-size: xx-large;
     text-align: center;
     margin-bottom: 0.5em;
+    margin-top: 0;    /* Reduce space above your name */
+    padding-top: 1.25em; /* Override global h1 padding */
+}
+
+@media (max-width: 600px) {
+    .title h1 {
+        padding-top: 0.5em;    /* Remove extra space above your name on small screens */
+        margin-top: 0;     /* Ensure no margin above */
+    }
+}
+
+@media (max-width: 600px) {
+    .title h1 {
+        padding-top: 0.5em;    /* Remove extra space above your name on small screens */
+        margin-top: 0;     /* Ensure no margin above */
+    }
 }
 
 .subtitle h2 {
@@ -404,5 +420,163 @@ input:checked + .slider:before {
     .research-area {
         flex: 1 1 100%;
         max-width: 95vw;
+    }
+}
+
+/* Engineering Projects Section; SRA added 09-25-2025 */
+.engineering-projects {
+    margin: 1.5em 0;
+    text-align: center;
+}
+.engineering-projects h1 {
+    margin-top: 1.25em;      /* Reduce gap above */
+    margin-bottom: 1em;   /* Space below, adjust as needed */
+    font-size: 2em;       /* Increase font size, adjust as desired */
+    font-weight: bold;
+    padding-top: 0;   /* <-- Add this line to override the global h1 padding */
+}
+.projects-row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping on large screens */
+    justify-content: center;
+    gap: 2em;
+}
+.project-card {
+    flex: 0 1 22%; /* 4 columns with some gap */
+    max-width: 220px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+.project-card img {
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+    background: #000435;      /* Optional: set a background color for padding area */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-card .caption {
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+@media (max-width: 900px) {
+    .projects-row {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+    .project-card {
+        flex: 1 1 45%;
+        max-width: 350px;
+        margin-bottom: 1em;
+    }
+}
+@media (max-width: 600px) {
+    .project-card {
+        flex: 1 1 100%;
+        max-width: 95vw;
+    }
+}
+
+/* Engineering Project Pages; SRA added 09-25-2025 */
+.project-overview {
+    text-align: justify;
+    margin-bottom: 1.5em
+}
+
+.project-media-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2em;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+.project-media-col {
+    flex: 1 1 45%;
+    max-width: 400px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-media-col img,
+.project-media-col iframe {
+    width: 100%;           /* Fill the column width */
+    height: auto;          /* Maintain natural aspect ratio */
+    aspect-ratio: 16/9;
+    object-fit: contain;   /* Show the whole image, no cropping */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 1em;
+    background: #000;      /* Optional: set a background color for padding area */
+}
+
+@media (max-width: 600px) {
+    .project-media-row {
+        flex-wrap: wrap;
+    }
+    .project-media-col {
+        flex: 1 1 100%;
+        max-width: 95vw;
+        margin-bottom: 1em;
+    }
+}
+
+/* Navigation bar for sections; SRA added 09-28-2025 */
+.go-to-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 1em auto 0 auto; /* Center and add top margin */
+    margin-bottom: 0; /* Reduce space below nav bar */
+    font-size: 1em;
+}
+.go-to-nav a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background: #e6e6fa;   /* <-- Make highlight always visible */
+    transition: background 0.2s;
+}
+.go-to-nav a:hover {
+    background: #d1d1f7;   /* <-- Slightly darker on hover, optional */
+}
+
+#key-research-areas {
+    scroll-margin-top: 1.5em; /* Adjust value for desired gap */
+}
+
+#engineering-projects {
+    scroll-margin-top: 1.5em; /* Adjust value for desired gap */
+}
+
+#featured-videos {
+    scroll-margin-top: 1.5em;
+}
+
+@media (max-width: 1000px) {
+    .go-to-nav {
+        flex-wrap: wrap;
+        gap: 1em;
+        margin: 1em auto 0 auto; /* Center and add top margin */
+        padding: 0 1em; /* Add horizontal padding for gap */
+    }
+}
+
+@media (max-width: 600px) {
+    .go-to-nav a {
+        flex: 1 1 100%;
+        margin-bottom: 0.5em;
+        text-align: center;
+        font-size: 1em;
     }
 }

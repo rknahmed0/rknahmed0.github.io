@@ -11,6 +11,8 @@ from typing import Dict, List
 from datetime import datetime
 
 SHOW_KEY_RESEARCH_AREAS = True  # Set to False to hide the section # SRA added 09-08-2025
+SHOW_ENGINEERING_PROJECTS = True  # Set to False to hide the section # SRA added 09-25-2025
+
 
 Config = collections.namedtuple(
     "Config", ["verbosity", "prefix", "target", "templates"]
@@ -437,7 +439,7 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<p>\n'
     
     # SRA 01-23-2025 edit to ensure videos are responsive to screen size
-    profile_html += '<div class="videos">\n'
+    profile_html += '<div class="videos" id="featured-videos">\n'
     profile_html += f'<div class="video">HarvardSpeech</div>\n'
     profile_html += f'<div class="video">HMSHooding</div>\n'
     profile_html += f'<div class="video">GSASDiploma</div>\n'
@@ -491,6 +493,18 @@ def build_index(
 ):
     body_html  = "<body>\n"
     body_html += header(has_dark)
+
+    # SRA added 09-28-2025
+    body_html += '''
+    <nav class="go-to-nav">
+        <a href="#featured-videos">Featured Videos</a>
+        <a href="#key-research-areas">Key Research Areas</a>
+        <a href="#recent-news">Recent News</a>
+        <a href="#selected-publications">Selected Publications</a>
+        <a href="#engineering-projects">Selected Engineering Projects</a>
+    </nav>
+    '''
+
     body_html += '<div class="content">\n'
 
     # SRA added 06-25-2024
@@ -516,7 +530,7 @@ def build_index(
     # Key Research Areas Section (toggle with SHOW_KEY_RESEARCH_AREAS) # SRA added 09-08-2025
     if SHOW_KEY_RESEARCH_AREAS:
         body_html += '''
-        <section class="key-research-areas">
+        <section class="key-research-areas" id="key-research-areas">
             <h1>Key Research Areas</h1>
             <div class="research-areas-row">
                 <a href="cervical.html" class="research-area">
@@ -538,9 +552,39 @@ def build_index(
             </div>
         </section>
         '''    
-
+    body_html += '<div id="recent-news">'
     body_html += build_news(news_json, 15, False) # 9/1/2025 changed from 11 to 15 news items
+    body_html += '</div>'
+    body_html += '<div id="selected-publications">'
     body_html += build_pubs(pubs_json, False)
+    body_html += '</div>'
+
+    # Engineering Projects Section (toggle with SHOW_ENGINEERING_PROJECTS) # SRA added 09-25-2025
+    if SHOW_ENGINEERING_PROJECTS:
+        body_html += '''
+        <section class="engineering-projects" id="engineering-projects">
+            <h1>Selected Engineering Projects</h1>
+            <div class="projects-row">
+                <a href="cervicalproject.html" class="project-card">
+                    <img src="images/cervical.jpg" alt="Globally Deployed Cervical Cancer AI">
+                    <div class="caption">Globally Deployed Cervical Cancer AI</div>
+                </a>
+                <a href="aoar.html" class="project-card">
+                    <img src="images/aoar.jpg" alt="AOAR - Autonomous Obstacle Avoiding Robot">
+                    <div class="caption">AOAR - Autonomous Obstacle Avoiding Robot</div>
+                </a>
+                <a href="spinal.html" class="project-card">
+                    <img src="images/spinal.jpg" alt="Spinal Cavity Creator">
+                    <div class="caption">Spinal Cavity Creator</div>
+                </a>
+                <a href="stirling.html" class="project-card">
+                    <img src="images/stirling.jpg" alt="Stirling Engine">
+                    <div class="caption">Stirling Engine</div>
+                </a>
+            </div>
+        </section>
+        '''    
+
     body_html += "</div>\n"
     body_html += footer_html
     body_html += "</body>\n"
@@ -602,6 +646,27 @@ def build_pubs_page(
     pubs_html += "</html>\n"
 
     return inspect.cleandoc(add_links(pubs_html, links))
+
+# SRA added 09-25-2025
+def build_project_page(media_html, has_dark: bool, overview: str = None, title: str = None):
+    body_html  = "<body>\n"
+    body_html += header(has_dark)
+    body_html += '<div class="content">\n'
+    body_html += f'<h1>{title}</h1>\n'
+    body_html += f'<p class="project-overview">{overview}</p>\n'
+    body_html += '<hr>\n'
+    body_html += media_html
+    body_html += "</div>\n"
+    body_html += footer_html
+    body_html += "</body>\n"
+
+    page_html  = "<!DOCTYPE html>\n"
+    page_html += '<html lang="en">\n'
+    page_html += head_html + "\n\n"
+    page_html += body_html
+    page_html += "</html>\n"
+
+    return inspect.cleandoc(page_html)
 
 
 if __name__ == "__main__":
@@ -792,6 +857,102 @@ if __name__ == "__main__":
 
         # Write the file (e.g., docs/ai-oncology.html)
         write_file(f"{config.target}/{area_slug}.html", area_page)
+
+    # SRA added 09-25-2025, build project page function call
+    
+    # cervical_project_page
+    cervical_media = '''
+    <div class="project-media-row">
+        <div class="project-media-col">
+            <img src="images/cervical.jpg" alt="Globally Deployed Cervical Cancer AI">
+        </div>
+        <div class="project-media-col">
+            <iframe src="https://drive.google.com/file/d/1BOL5sjguCvMZNisrRf-nZVZz10kFKSZN/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    '''
+    cervical_overview = "In this project, I led the AI arm of a global consortium (PAVE) to build the first generalizable AI-driven cervical cancer screening and treatment pipeline deployed in the field. Cervical cancer is the leading cause of cancer death (>90%) in women in many low-income countries, yet entirely preventable if caught early. Using a custom colposcope-thermocoagulator, <a href=\"https://doi.org/10.1093/jnci/djaf054\">my pipeline has already been used to screen 25,000+ women across 9 countries</a>, including Brazil, Cambodia, Dominican Republic, El Salvador, Eswatini, Honduras, Malawi, Nigeria, and Tanzania, bringing lifesaving early detection to populations previously without access. For women who would otherwise wait months or years for care, this means answers and treatment in a single visit. Publications generated from this work are highlighted <a href=\"cervical.html\">here</a>, with seminal work encapsulating the <a href=\"https://doi.org/10.1038/s41598-023-48721-1\">multi-stage, comprehensive development of the diagnostic classifier</a>, <a href=\"https://doi.org/10.1371/journal.pdig.0000364\">external validation and generalizability assessment across multiple devices and geographies</a>, and the <a href=\"https://doi.org/10.1038/s41598-025-90024-0\">development/validation of the quality classifier</a>. Our study design is highlighted in <a href=\"https://doi.org/10.7554/eLife.91469.2\">this paper</a>, while preliminary results of screening using my pipeline is highlighted <a href=\"https://doi.org/10.1093/jnci/djaf054\">here</a>. This work has also received national coverage in an <a href=\"https://www.cancer.gov/about-nci/organization/cbiit/news-events/news/2024/nci-study-tests-performance-ai-based-cervical-cancer-screening\">NCI.gov feature</a>"
+    cervical_page = build_project_page(cervical_media, has_dark, cervical_overview, "Globally Deployed Cervical Cancer AI")
+    write_file(f"{config.target}/cervicalproject.html", cervical_page)
+
+    # aoar_project_page
+    aoar_media = '''
+    <div class="project-media-row">
+        <div class="project-media-col">
+            <iframe src="https://drive.google.com/file/d/1C_keaB16Q-QUNBrw4q7Q2-x1MJO60Im-/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>    
+    </div>
+    <div class="project-media-row">
+        <div class="project-media-col">
+            <img src="images/aoar/AOAR_1.jpg" alt="AOAR - Autonomous Obstacle Avoiding Robot">
+        </div>
+        <div class="project-media-col">
+            <img src="images/aoar/AOAR_2.jpg" alt="AOAR - Autonomous Obstacle Avoiding Robot">
+        </div>
+    </div>
+    <div class="project-media-row">
+        <div class="project-media-col">
+            <img src="images/aoar/AOAR_3.jpg" alt="AOAR - Autonomous Obstacle Avoiding Robot">
+        </div>
+        <div class="project-media-col">
+            <img src="images/aoar/AOAR_4.jpg" alt="AOAR - Autonomous Obstacle Avoiding Robot">
+        </div>    
+    </div>
+    '''
+    aoar_overview = "In this project, I iteratively designed an Autonomous Obstacle Avoiding Robot that autonomously detects obstacles by ultrasound sensors and avoids obstacles by moving multi-directionally via servomotors, using a free-programmable-gate-array (FPGA) coded by VHDL on VIVADO as the controller to interface between the ultrasound rangefinders and servomotors. I used a top-down, modular design and a bottom-up implementation approach, with rigorous testing conducted on each module using various digital tools (VIVADO, Digital Oscilloscope). Obstactle avoidance forms the fundamental basis of self-driving cars, as demonstrated by Waymo (Google/Alphabet Inc.)"
+    aoar_page = build_project_page(aoar_media, has_dark, aoar_overview, "AOAR - Autonomous Obstacle Avoiding Robot")
+    write_file(f"{config.target}/aoar.html", aoar_page)
+
+    # SCC_project_page
+    scc_media = '''
+    <div class="project-media-row">
+        <div class="project-media-col">
+            <img src="images/spinal/SCC_1.jpg" alt="Spinal Cavity Creator">
+        </div>
+        <div class="project-media-col">
+            <img src="images/spinal/SCC_2.jpg" alt="Spinal Cavity Creator">
+        </div>
+    </div>
+    <div class="project-media-row">
+        <div class="project-media-col">
+            <img src="images/spinal/SCC_a.jpg" alt="Spinal Cavity Creator">
+        </div>
+        <div class="project-media-col">
+            <img src="images/spinal/SCC_b.jpg" alt="Spinal Cavity Creator">
+        </div>    
+    </div>
+    <div class="project-media-row">
+        <div class="project-media-col">
+            <img src="images/spinal/SCC_c.jpg" alt="Spinal Cavity Creator">
+        </div>
+        <div class="project-media-col">
+            <img src="images/spinal/SCC_d.jpg" alt="Spinal Cavity Creator">
+        </div>    
+    </div>
+    '''
+    scc_overview = "In this project, I iteratively designed (via CAD, 3D Printing and Machining) a Spinal Cavity Creator capable of removing cylindrical-shaped intervertebral disc space material to aid TLIF surgeries for Degenerative Spondylolisthesis. Specifically, this involved conducting a modular design approach as part of 4 distinct teams: 1. Mechanical, responsible for design of the actual mechanical drill bit and shaft interfaced to a pneumatic drill chuck, together with a guide and mount attached to a spinal cross-linker and an arm that would guide a linear stage containing the drill chuck, 2. Image Guidance, responsible for writing scripts to enable determination of the correct trajectory for drilling via image registration using pre-op MRI and real-time CT images, 3. Sensing, responsible for design of appropriate electronic/mechanical sensing equipment that would prevent contact with blood vessels and nerve roots near the foramen, and, 4. Testing, responsible for design of a fully-integrated test-bench for testing each of the aforementioned modules and verifying operation of the fully assembled drill."
+    scc_page = build_project_page(scc_media, has_dark, scc_overview, "Spinal Cavity Creator")
+    write_file(f"{config.target}/spinal.html", scc_page)
+
+    # stirling_project_page
+    stirling_media = '''
+    <div class="project-media-row">
+        <div class="project-media-col">
+            <iframe src="https://drive.google.com/file/d/1x-kqwjVWc1MQ2qYLutdQ2-NsWfEUZADu/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>    
+    </div>
+    <div class="project-media-row">
+        <div class="project-media-col">
+            <img src="images/stirling/STE_1.jpg" alt="Stirling Engine">
+        </div>
+        <div class="project-media-col">
+            <img src="images/stirling/STE_2.jpg" alt="Stirling Engine">
+        </div>
+    </div>
+    '''
+    stirling_overview = "In this project, I iteratively designed and successfully tested a Stirling engine - this involved skills including but not limited to 3 axes milling, 2 axes lathing, laser cutting, CAD and SolidWorks, 3D printing and welding, and subsequently won class competition for most efficient and fastest running Stirling engine."
+    stirling_page = build_project_page(stirling_media, has_dark, stirling_overview, "Stirling Engine")
+    write_file(f"{config.target}/stirling.html", stirling_page)
 
     # Write to files
     status("\nWriting website:")
