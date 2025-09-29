@@ -656,7 +656,7 @@ def build_project_page(media_html, has_dark: bool, overview: str = None, title: 
         body_html += (
             '<h1 style="display: flex; align-items: center; justify-content: space-between;">'
             'Globally Deployed Cervical Cancer AI'
-            '<a href="cervicalpubs.html" class="highlighted-link" style="margin-left: 1em;">View Publications</a>'
+            '<a href="cervicalpubs.html" class="highlighted-link" style="margin-left: 1em;">Publications</a>'
             '</h1>\n'
         )
     else:

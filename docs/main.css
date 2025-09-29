@@ -175,6 +175,12 @@ b {
     text-align: justify;
 }
 
+/* @media (max-width: 600px) {
+    .profile {
+        text-align: left;
+    }
+} */
+
 /* End Profile */
 
 /* Start News and Pubs */
@@ -596,4 +602,14 @@ input:checked + .slider:before {
 }
 .highlighted-link:hover {
     background: #d1d1f7;
+}
+
+/* Additional media query for very small screens; SRA added 09-29-2025 */
+@media (max-width: 400px) {
+    .profile {
+        text-align: left !important;
+    }
+    .project-overview {
+        text-align: left !important;
+    }
 }
