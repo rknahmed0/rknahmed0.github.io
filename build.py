@@ -386,14 +386,14 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<a href="%s">Github</a>\n' % profile["github"]
 
     profile_html += '<p>\n'
-    profile_html += 'Engineer | '
-    profile_html += 'Doctor | '
-    profile_html += 'Computer Scientist'
+    profile_html += '<a href="%s">Harvard Profile</a> | ' % profile["hvprof"]
+    profile_html += '<a href="%s">Dartmouth Profile</a>\n' % profile["dmprof"]
     profile_html += '</p>\n'
 
     profile_html += '<p>\n'
-    profile_html += '<a href="%s">Harvard Profile</a> | ' % profile["hvprof"]
-    profile_html += '<a href="%s">Dartmouth Medicine Profile</a>\n' % profile["dmprof"]
+    profile_html += 'Engineer | '
+    profile_html += 'Doctor | '
+    profile_html += 'Computer Scientist'
     profile_html += '</p>\n'
 
     profile_html += '<p>\n'
@@ -565,7 +565,7 @@ def build_index(
         <section class="engineering-projects" id="engineering-projects">
             <h1>Selected Engineering Projects</h1>
             <div class="projects-row">
-                <a href="cervicalproject.html" class="project-card">
+                <a href="cervical.html" class="project-card">
                     <img src="images/cervical.jpg" alt="Globally Deployed Cervical Cancer AI">
                     <div class="caption">Globally Deployed Cervical Cancer AI</div>
                 </a>
@@ -647,12 +647,20 @@ def build_pubs_page(
 
     return inspect.cleandoc(add_links(pubs_html, links))
 
-# SRA added 09-25-2025
+# SRA added 09-29-2025
 def build_project_page(media_html, has_dark: bool, overview: str = None, title: str = None):
     body_html  = "<body>\n"
     body_html += header(has_dark)
     body_html += '<div class="content">\n'
-    body_html += f'<h1>{title}</h1>\n'
+    if "cervical" in title.lower():
+        body_html += (
+            '<h1 style="display: flex; align-items: center; justify-content: space-between;">'
+            'Globally Deployed Cervical Cancer AI'
+            '<a href="cervicalpubs.html" class="highlighted-link" style="margin-left: 1em;">View Publications</a>'
+            '</h1>\n'
+        )
+    else:
+        body_html += f'<h1>{title}</h1>\n'
     body_html += f'<p class="project-overview">{overview}</p>\n'
     body_html += '<hr>\n'
     body_html += media_html
@@ -839,7 +847,7 @@ if __name__ == "__main__":
     # SRA added 09-08-2025
     # Define your research area mapping (area name in your pubs.json)
     RESEARCH_AREAS = [
-        ("cervical", "Globally Deployed Cervical Cancer AI"),
+        ("cervicalpubs", "Globally Deployed Cervical Cancer AI"),
         ("brain", "AI/DL in Brain Tumors"),
         ("comptumorbiology", "Computational Imaging for Tumor Biology"),
         ("techdl", "Technical AI/DL Advances"),
@@ -871,9 +879,9 @@ if __name__ == "__main__":
         </div>
     </div>
     '''
-    cervical_overview = "In this project, I led the AI arm of a global consortium (PAVE) to build the first generalizable AI-driven cervical cancer screening and treatment pipeline deployed in the field. Cervical cancer is the leading cause of cancer death (>90%) in women in many low-income countries, yet entirely preventable if caught early. Using a custom colposcope-thermocoagulator, <a href=\"https://doi.org/10.1093/jnci/djaf054\">my pipeline has already been used to screen 25,000+ women across 9 countries</a>, including Brazil, Cambodia, Dominican Republic, El Salvador, Eswatini, Honduras, Malawi, Nigeria, and Tanzania, bringing lifesaving early detection to populations previously without access. For women who would otherwise wait months or years for care, this means answers and treatment in a single visit. Publications generated from this work are highlighted <a href=\"cervical.html\">here</a>, with seminal work encapsulating the <a href=\"https://doi.org/10.1038/s41598-023-48721-1\">multi-stage, comprehensive development of the diagnostic classifier</a>, <a href=\"https://doi.org/10.1371/journal.pdig.0000364\">external validation and generalizability assessment across multiple devices and geographies</a>, and the <a href=\"https://doi.org/10.1038/s41598-025-90024-0\">development/validation of the quality classifier</a>. Our study design is highlighted in <a href=\"https://doi.org/10.7554/eLife.91469.2\">this paper</a>, while preliminary results of screening using my pipeline is highlighted <a href=\"https://doi.org/10.1093/jnci/djaf054\">here</a>. This work has also received national coverage in an <a href=\"https://www.cancer.gov/about-nci/organization/cbiit/news-events/news/2024/nci-study-tests-performance-ai-based-cervical-cancer-screening\">NCI.gov feature</a>"
-    cervical_page = build_project_page(cervical_media, has_dark, cervical_overview, "Globally Deployed Cervical Cancer AI")
-    write_file(f"{config.target}/cervicalproject.html", cervical_page)
+    cervical_overview = "In this project, I led the AI arm of a global consortium (PAVE) to build the first generalizable AI-driven cervical cancer screening and treatment pipeline deployed in the field. Cervical cancer is the leading cause of cancer death (>90%) in women in many low-income countries, yet entirely preventable if caught early. Using a custom colposcope-thermocoagulator, <a href=\"https://doi.org/10.1093/jnci/djaf054\">my pipeline has already been used to screen 25,000+ women across 9 countries</a>, including Brazil, Cambodia, Dominican Republic, El Salvador, Eswatini, Honduras, Malawi, Nigeria, and Tanzania, bringing lifesaving early detection to populations previously without access. For women who would otherwise wait months or years for care, this means answers and treatment in a single visit. <a href=\"cervicalpubs.html\">Publications generated from this work are highlighted here</a> as well as below, with seminal work encapsulating the <a href=\"https://doi.org/10.1038/s41598-023-48721-1\">multi-stage, comprehensive development of the diagnostic classifier</a>, <a href=\"https://doi.org/10.1371/journal.pdig.0000364\">external validation and generalizability assessment across multiple devices and geographies</a>, and the <a href=\"https://doi.org/10.1038/s41598-025-90024-0\">development/validation of the quality classifier</a>. Our study design is highlighted in <a href=\"https://doi.org/10.7554/eLife.91469.2\">this paper</a>, while preliminary results of screening using my pipeline is highlighted <a href=\"https://doi.org/10.1093/jnci/djaf054\">here</a>. This work has also received national coverage in an <a href=\"https://www.cancer.gov/about-nci/organization/cbiit/news-events/news/2024/nci-study-tests-performance-ai-based-cervical-cancer-screening\">NCI.gov feature</a>"
+    cervical_proj_page = build_project_page(cervical_media, has_dark, cervical_overview, "Globally Deployed Cervical Cancer AI")
+    write_file(f"{config.target}/cervicalproject.html", cervical_proj_page)
 
     # aoar_project_page
     aoar_media = '''
@@ -953,6 +961,38 @@ if __name__ == "__main__":
     stirling_overview = "In this project, I iteratively designed and successfully tested a Stirling engine - this involved skills including but not limited to 3 axes milling, 2 axes lathing, laser cutting, CAD and SolidWorks, 3D printing and welding, and subsequently won class competition for most efficient and fastest running Stirling engine."
     stirling_page = build_project_page(stirling_media, has_dark, stirling_overview, "Stirling Engine")
     write_file(f"{config.target}/stirling.html", stirling_page)
+
+    # Combined_Cervical_Page - SRA added 09/29/2025
+    
+    # Extract the overview/media section from cervical_proj_page
+    start_content = cervical_proj_page.find('<div class="content">') + len('<div class="content">')
+    end_content = cervical_proj_page.rfind('</div>')
+    overview_media_section = cervical_proj_page[start_content:end_content]
+    
+    # Extract the publications section from cervical_pubs_html
+    cervical_pubs = [pub for pub in pubs_json if pub["area"] == "Globally Deployed Cervical Cancer AI"]
+    cervical_pubs_page = build_pubs_page(cervical_pubs, auto_links_json, has_dark)
+    start_pubs = cervical_pubs_page.find('<div class="section">')
+    end_pubs = cervical_pubs_page.rfind('</div>') + len('</div>')
+    pubs_section = cervical_pubs_page[start_pubs:end_pubs] if start_pubs != -1 and end_pubs != -1 else cervical_pubs_page
+    
+    # Build the combined page
+    body_html  = "<body>\n"
+    body_html += header(has_dark)
+    body_html += '<div class="content">\n'
+    body_html += overview_media_section
+    body_html += pubs_section
+    body_html += "</div>\n"
+    body_html += footer_html
+    body_html += "</body>\n"
+
+    page_html  = "<!DOCTYPE html>\n"
+    page_html += '<html lang="en">\n'
+    page_html += head_html + "\n\n"
+    page_html += body_html
+    page_html += "</html>\n"
+
+    write_file(f"{config.target}/cervical.html", inspect.cleandoc(page_html))
 
     # Write to files
     status("\nWriting website:")

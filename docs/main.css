@@ -580,3 +580,20 @@ input:checked + .slider:before {
         font-size: 1em;
     }
 }
+
+/* Highlighted link style for combined (description + pubs) header; SRA added 09-29-2025 */
+
+.highlighted-link {
+    background: #e6e6fa;
+    color: #003366;
+    font-weight: bold;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+    font-size: 0.8em;
+}
+.highlighted-link:hover {
+    background: #d1d1f7;
+}
