@@ -569,11 +569,11 @@ input:checked + .slider:before {
     scroll-margin-top: 1.5em;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
     .go-to-nav {
         flex-wrap: wrap;
         gap: 1em;
-        margin: 1em auto 0 auto; /* Center and add top margin */
+        margin: 1.65em auto 0 auto; /* Center and add top margin */
         padding: 0 1em; /* Add horizontal padding for gap */
     }
 }
