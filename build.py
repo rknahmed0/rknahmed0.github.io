@@ -379,11 +379,17 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '</div>\n'
     profile_html += '<div class="subtitle">\n'
     profile_html += '<h2>\n'
+
+    profile_html += '<a href="%s">Forbes 30 Under 30 2026</a>' % profile["forbes"]
+    profile_html += '<br>\n'  # add one-line gap after Forbes link
+
+    profile_html += '<p>\n'
     profile_html += '<a href="%s">CV</a> | ' % profile["cv"]
     profile_html += '<a href="%s">LinkedIn</a> | ' % profile["linkedin"]
     profile_html += '<a href="%s">ORCID</a> | ' % profile["orcid"]
     profile_html += '<a href="%s">Google Scholar</a> | ' % profile["scholar"]
     profile_html += '<a href="%s">Github</a>\n' % profile["github"]
+    profile_html += '</p>\n'
 
     profile_html += '<p>\n'
     profile_html += '<a href="%s">Harvard Profile</a> | ' % profile["hvprof"]
