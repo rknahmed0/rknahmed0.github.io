@@ -610,3 +610,26 @@ input:checked + .slider:before {
         text-align: left;
     }
 }
+
+/* Forbes Badge; SRA added 12-06-2025 */
+
+.forbes-badge {
+    display: inline-block;
+    background: linear-gradient(180deg,#fff8e6,#fff2d0);
+    color: #1b2b4a;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 0.32em 0.6em;
+    border-radius: 6px;
+    border: 1px solid rgba(27,43,74,0.08);
+    box-shadow: 0 1px 4px rgba(27,43,74,0.06);
+    text-decoration: none;
+    font-size: 0.95em;
+    vertical-align: middle;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.forbes-badge:hover {
+    background: linear-gradient(180deg,#fff6db,#fff0c8);
+    box-shadow: 0 2px 6px rgba(27,43,74,0.10);
+}

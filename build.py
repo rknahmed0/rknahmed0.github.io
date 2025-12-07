@@ -380,8 +380,9 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<div class="subtitle">\n'
     profile_html += '<h2>\n'
 
-    profile_html += '<a href="%s">Forbes 30 Under 30 2026</a>' % profile["forbes"]
-    profile_html += '<br>\n'  # add one-line gap after Forbes link
+    # Forbes Badge; SRA added 12-06-2025
+    profile_html += '<a href="%s" class="forbes-badge" title="Forbes 30 Under 30 2026">Forbes 30 Under 30 2026</a>' % profile["forbes"]
+    profile_html += '<p>&nbsp;</p>\n'  # visible gap without changing CSS
 
     profile_html += '<p>\n'
     profile_html += '<a href="%s">CV</a> | ' % profile["cv"]
@@ -559,7 +560,7 @@ def build_index(
         </section>
         '''    
     body_html += '<div id="recent-news">'
-    body_html += build_news(news_json, 15, False) # 9/1/2025 changed from 11 to 15 news items
+    body_html += build_news(news_json, 16, False) # 12/06/2025 changed from 15 to 16 news items
     body_html += '</div>'
     body_html += '<div id="selected-publications">'
     body_html += build_pubs(pubs_json, False)
