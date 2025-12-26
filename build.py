@@ -381,7 +381,7 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<h2>\n'
 
     # Forbes Badge; SRA added 12-06-2025
-    profile_html += '<a href="%s" class="forbes-badge" title="Forbes 30 Under 30 2026">Forbes 30 Under 30 2026</a>' % profile["forbes"]
+    profile_html += '<a href="%s" class="forbes-badge" title="Forbes 30 Under 30 US 2026">Forbes 30 Under 30 US 2026</a>' % profile["forbes"]
     profile_html += '<p>&nbsp;</p>\n'  # visible gap without changing CSS
 
     profile_html += '<p>\n'
