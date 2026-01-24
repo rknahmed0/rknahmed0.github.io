@@ -384,54 +384,54 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<a href="%s" class="forbes-badge" title="Forbes 30 Under 30 US 2026">Forbes 30 Under 30 US 2026</a>' % profile["forbes"]
     profile_html += '<p>&nbsp;</p>\n'  # visible gap without changing CSS
 
-    profile_html += '<p>\n'
-    profile_html += '<a href="%s">CV</a> | ' % profile["cv"]
-    profile_html += '<a href="%s">LinkedIn</a> | ' % profile["linkedin"]
-    profile_html += '<a href="%s">ORCID</a> | ' % profile["orcid"]
-    profile_html += '<a href="%s">Google Scholar</a> | ' % profile["scholar"]
-    profile_html += '<a href="%s">Github</a>\n' % profile["github"]
-    profile_html += '</p>\n'
+    # profile_html += '<p>\n'
+    # profile_html += '<a href="%s">CV</a> | ' % profile["cv"]
+    # profile_html += '<a href="%s">LinkedIn</a> | ' % profile["linkedin"]
+    # profile_html += '<a href="%s">ORCID</a> | ' % profile["orcid"]
+    # profile_html += '<a href="%s">Google Scholar</a> | ' % profile["scholar"]
+    # profile_html += '<a href="%s">Github</a>\n' % profile["github"]
+    # profile_html += '</p>\n'
 
-    profile_html += '<p>\n'
-    profile_html += '<a href="%s">Harvard Profile</a> | ' % profile["hvprof"]
-    profile_html += '<a href="%s">Dartmouth Profile</a>\n' % profile["dmprof"]
-    profile_html += '</p>\n'
+    # profile_html += '<p>\n'
+    # profile_html += '<a href="%s">Harvard Profile</a> | ' % profile["hvprof"]
+    # profile_html += '<a href="%s">Dartmouth Profile</a>\n' % profile["dmprof"]
+    # profile_html += '</p>\n'
 
-    profile_html += '<p>\n'
-    profile_html += 'Engineer | '
-    profile_html += 'Doctor | '
-    profile_html += 'Computer Scientist'
-    profile_html += '</p>\n'
+    # profile_html += '<p>\n'
+    # profile_html += 'Engineer | '
+    # profile_html += 'Doctor | '
+    # profile_html += 'Computer Scientist'
+    # profile_html += '</p>\n'
 
-    profile_html += '<p>\n'
-    profile_html += '<a href="%s">UHS</a> | ' % profile["uhsprof"]
-    profile_html += '<a href="%s">Resident Tutor</a> | ' % profile["cabot"]
-    profile_html += '<a href="%s">FiVE</a> | ' % profile["five"]
-    profile_html += '<a href="%s">IV Fellow</a> | ' % profile["ivfell"]
-    profile_html += '<a href="%s">NCI.gov feature</a>\n' % profile["nci"]
-    profile_html += '</p>\n'
+    # profile_html += '<p>\n'
+    # profile_html += '<a href="%s">UHS</a> | ' % profile["uhsprof"]
+    # profile_html += '<a href="%s">Resident Tutor</a> | ' % profile["cabot"]
+    # profile_html += '<a href="%s">FiVE</a> | ' % profile["five"]
+    # profile_html += '<a href="%s">IV Fellow</a> | ' % profile["ivfell"]
+    # profile_html += '<a href="%s">NCI.gov feature</a>\n' % profile["nci"]
+    # profile_html += '</p>\n'
     
-    profile_html += '<p>\n'
-    profile_html += 'Alpha Omega Alpha | '
-    profile_html += 'Phi Beta Kappa | '
-    profile_html += 'Tau Beta Pi | '
-    profile_html += 'Sigma Xi'
-    profile_html += '</p>\n'
+    # profile_html += '<p>\n'
+    # profile_html += 'Alpha Omega Alpha | '
+    # profile_html += 'Phi Beta Kappa | '
+    # profile_html += 'Tau Beta Pi | '
+    # profile_html += 'Sigma Xi'
+    # profile_html += '</p>\n'
 
-    profile_html += '<p>\n'
-    profile_html += '<a href="%s">syedrakin_ahmed@fas.harvard.edu</a> | ' % profile["harvard"]
-    profile_html += '<a href="%s">rakin@mit.edu</a> | ' % profile["mit"]
-    profile_html += '<a href="%s">syed.rakin.ahmed.med@dartmouth.edu</a>\n' % profile["dartm"]
-    profile_html += '</p>\n'
+    # profile_html += '<p>\n'
+    # profile_html += '<a href="%s">syedrakin_ahmed@fas.harvard.edu</a> | ' % profile["harvard"]
+    # profile_html += '<a href="%s">rakin@mit.edu</a> | ' % profile["mit"]
+    # profile_html += '<a href="%s">syed.rakin.ahmed.med@dartmouth.edu</a>\n' % profile["dartm"]
+    # profile_html += '</p>\n'
     
-    profile_html += '<p>\n'
-    profile_html += '<a href="%s">United States Medical Licensing Exam (USMLE) Step 1 Score: 260</a> (top 4 percent)' % (profile["stepone"])
-    profile_html += '</p>\n'
+    # profile_html += '<p>\n'
+    # profile_html += '<a href="%s">United States Medical Licensing Exam (USMLE) Step 1 Score: 260</a> (top 4 percent)' % (profile["stepone"])
+    # profile_html += '</p>\n'
 
-    profile_html += '<p>\n'
-    profile_html += 'SAT I: 2310 (770 CR, 770 Math, 770 Writing) | '
-    profile_html += 'SAT II: 2390 (800 Math II, 800 Chem., 790 Phys.)'
-    profile_html += '</p>\n'
+    # profile_html += '<p>\n'
+    # profile_html += 'SAT I: 2310 (770 CR, 770 Math, 770 Writing) | '
+    # profile_html += 'SAT II: 2390 (800 Math II, 800 Chem., 790 Phys.)'
+    # profile_html += '</p>\n'
 
     profile_html += '<div class="hbar"></div>\n'
     profile_html += '</h2>\n'
