@@ -450,9 +450,9 @@ def build_profile(profile: Dict[str, str]):
     # profile_html += f'<div class="video">HarvardSpeech</div>\n'
     profile_html += f'<div class="video">HMSHooding</div>\n'
     profile_html += f'<div class="video">GSASDiploma</div>\n'
-    profile_html += f'<div class="video">UniWideComm</div>\n'
+    # profile_html += f'<div class="video">UniWideComm</div>\n'
     # profile_html += f'<div class="video">DissDefense</div>\n'
-    profile_html += f'<div class="video">DartmouthFinAid</div>\n'
+    # profile_html += f'<div class="video">DartmouthFinAid</div>\n'
     profile_html += '</div>\n'
     
     profile_html += '</p>\n'
