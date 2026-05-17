@@ -148,9 +148,10 @@ b {
 }
 
 .video iframe {
+    display: block;
     width: 100%;
-    height: auto;
     aspect-ratio: 16/9; /* Maintain a 16:9 aspect ratio */
+    border: 0;
 }
 
 @media (max-width: 600px) {
