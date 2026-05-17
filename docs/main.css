@@ -137,11 +137,12 @@ b {
 .videos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center; /* changed from "space-around" to "center" on 05/17/2026 to ensure odd numbered videos centre on last row */
 }
 
 .video {
-    flex: 1 1 45%; /* Adjust the percentage as needed */
+    flex: 0 1 45%; /* Adjust the percentage as needed */ /* changed from "1 1 45%" to "0 1 45%" on 05/17/2026 to ensure odd numbered videos centre on last row */
+    max-width: 45%; /* added on 05/17/2026 to ensure odd numbered videos centre on last row */
     margin: 10px;
     box-sizing: border-box;
 }
@@ -154,7 +155,8 @@ b {
 
 @media (max-width: 600px) {
     .video {
-        flex: 1 1 100%; /* Full width on small screens */
+        flex: 0 1 100%; /* Full width on small screens */ /* changed from "1 1 100%" to "0 1 100%" on 05/17/2026 to ensure odd numbered videos centre on last row */
+        max-width: 100%; /* added on 05/17/2026 to ensure odd numbered videos centre on last row */
     }
 }
 
