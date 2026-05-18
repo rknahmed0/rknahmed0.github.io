@@ -145,13 +145,14 @@ b {
     max-width: 45%; /* added on 05/17/2026 to ensure odd numbered videos centre on last row */
     margin: 10px;
     box-sizing: border-box;
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
 }
 
 .video iframe {
-    display: block;
     width: 100%;
-    aspect-ratio: 16/9; /* Maintain a 16:9 aspect ratio */
-    border: 0;
+    height: 100%;
+    border: none;
+    display: block;
 }
 
 @media (max-width: 600px) {
@@ -513,18 +514,26 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     align-items: center;
+    aspect-ratio: 16 / 9; /* <-- FORCE CONTAINER DIMENSIONS */
+    margin-bottom: 1em;   /* <-- MOVE MARGIN TO CONTAINER */
 }
 
-.project-media-col img,
-.project-media-col iframe {
+.project-media-col img {
     width: 100%;           /* Fill the column width */
-    height: auto;          /* Maintain natural aspect ratio */
-    aspect-ratio: 16/9;
+    height: 100%;          /* Maintain natural aspect ratio */
     object-fit: contain;   /* Show the whole image, no cropping */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    margin-bottom: 1em;
     background: #000;      /* Optional: set a background color for padding area */
+}
+
+.project-media-col iframe {
+    width: 100%;           /* Fill the column width */
+    height: 100%;          /* Maintain natural aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #000;      /* Optional: set a background color for padding area */
+    border: none;
 }
 
 @media (max-width: 600px) {
