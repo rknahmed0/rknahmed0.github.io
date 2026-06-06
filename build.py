@@ -449,11 +449,11 @@ def build_profile(profile: Dict[str, str]):
     profile_html += '<div class="videos" id="featured-videos">\n'
     # profile_html += f'<div class="video">HarvardSpeech</div>\n'
     profile_html += f'<div class="video">HMSHooding</div>\n'
-    # profile_html += f'<div class="video">GSASDiploma</div>\n'
+    profile_html += f'<div class="video">GSASDiploma</div>\n'
     # profile_html += f'<div class="video">UniWideComm</div>\n'
     # profile_html += f'<div class="video">DissDefense</div>\n'
-    profile_html += f'<div class="video">DartmouthFinAid</div>\n'
-    # profile_html += f'<div class="video">DMSGrad</div>\n'
+    # profile_html += f'<div class="video">DartmouthFinAid</div>\n'
+    profile_html += f'<div class="video">DMSGrad</div>\n'
     profile_html += '</div>\n'
     
     profile_html += '</p>\n'
@@ -520,12 +520,12 @@ def build_index(
 
     # SRA 01-23-2025 removed width="385" and height="217" to allow for responsive design
     harvard_speech = '<iframe src="https://drive.google.com/file/d/1gUfnXREFha1onxQCOCd728FaRAqFklJY/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    hms_hooding = '<iframe src="https://drive.google.com/file/d/10HesprAQXGE-RgoiKGv3XppBXMJvxxn-/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    gsas_diploma = '<iframe src="https://drive.google.com/file/d/1qTySGLPS4J4h2cvjOJy-jbPa8D6xB6_Y/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    hms_hooding = '<iframe src="https://www.youtube.com/embed/udFaEQOlXKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    gsas_diploma = '<iframe src="https://www.youtube.com/embed/slr713omlgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     uniwide_comm = '<iframe src="https://drive.google.com/file/d/1QBbY3yzuSKG9M6TwtodA5uXLCD2Vnruv/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     diss_defense = '<iframe src="https://drive.google.com/file/d/19PNrYMhCeQT3mbfoANbIlhCM4gKwokwZ/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     dartmouth_finaid = '<iframe src="https://www.youtube.com/embed/VLV_LlrPOuI?start=290&end=515" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    # dms_grad = '<iframe src="https://drive.google.com/file/d/13vtF1Ix27OQ2oTJzfm3iXc7M8wI5eJug/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    dms_grad = '<iframe src="https://www.youtube.com/embed/uzAjzmT8-l8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
     profile_html = profile_html.replace("HarvardSpeech", harvard_speech)
     profile_html = profile_html.replace("HMSHooding", hms_hooding)
@@ -533,7 +533,7 @@ def build_index(
     profile_html = profile_html.replace("UniWideComm", uniwide_comm)
     profile_html = profile_html.replace("DissDefense", diss_defense)
     profile_html = profile_html.replace("DartmouthFinAid", dartmouth_finaid)
-    # profile_html = profile_html.replace("DMSGrad", dms_grad)
+    profile_html = profile_html.replace("DMSGrad", dms_grad)
 
     body_html += profile_html
 
