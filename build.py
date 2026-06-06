@@ -454,6 +454,7 @@ def build_profile(profile: Dict[str, str]):
     # profile_html += f'<div class="video">DissDefense</div>\n'
     # profile_html += f'<div class="video">DartmouthFinAid</div>\n'
     profile_html += f'<div class="video">DMSGrad</div>\n'
+    profile_html += f'<div class="video">DartmouthUG</div>\n'
     profile_html += '</div>\n'
     
     profile_html += '</p>\n'
@@ -520,12 +521,13 @@ def build_index(
 
     # SRA 01-23-2025 removed width="385" and height="217" to allow for responsive design
     harvard_speech = '<iframe src="https://drive.google.com/file/d/1gUfnXREFha1onxQCOCd728FaRAqFklJY/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    hms_hooding = '<iframe src="https://www.youtube.com/embed/udFaEQOlXKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    gsas_diploma = '<iframe src="https://www.youtube.com/embed/slr713omlgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    hms_hooding = '<iframe src="https://www.youtube.com/embed/-4M-HgTJGYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    gsas_diploma = '<iframe src="https://www.youtube.com/embed/tW9Dz5i9JLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     uniwide_comm = '<iframe src="https://drive.google.com/file/d/1QBbY3yzuSKG9M6TwtodA5uXLCD2Vnruv/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     diss_defense = '<iframe src="https://drive.google.com/file/d/19PNrYMhCeQT3mbfoANbIlhCM4gKwokwZ/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     dartmouth_finaid = '<iframe src="https://www.youtube.com/embed/VLV_LlrPOuI?start=290&end=515" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    dms_grad = '<iframe src="https://www.youtube.com/embed/uzAjzmT8-l8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    dms_grad = '<iframe src="https://www.youtube.com/embed/Rl2X5LaytFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    dartmouth_ug = '<iframe src="https://www.youtube.com/embed/l7QYhSl2wWY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
     profile_html = profile_html.replace("HarvardSpeech", harvard_speech)
     profile_html = profile_html.replace("HMSHooding", hms_hooding)
@@ -534,7 +536,7 @@ def build_index(
     profile_html = profile_html.replace("DissDefense", diss_defense)
     profile_html = profile_html.replace("DartmouthFinAid", dartmouth_finaid)
     profile_html = profile_html.replace("DMSGrad", dms_grad)
-
+    profile_html = profile_html.replace("DartmouthUG", dartmouth_ug)
     body_html += profile_html
 
     # Key Research Areas Section (toggle with SHOW_KEY_RESEARCH_AREAS) # SRA added 09-08-2025
